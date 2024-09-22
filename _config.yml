@@ -14,21 +14,21 @@ permalink: /:title/
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
-    gravatar: theblazetimes
+    name: The Blaze Times
+    display_name: The Blaze Times
+    gravatar: 67accb20e06a4954e37ee7c6ea8790e0
     email: theblazetimes@gmail.com
     web: https://www.theblazetimes.in
     twitter: https://twitter.com/theblazetimes_x
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
   john:
-    name: John
-    display_name: John    
+    name: It Is Unique Official
+    display_name: It Is Unique Official    
     avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
+    gravatar: beb6bb7addac22582e879ea50bbacfa2
+    email: itisuniqueofficial@gmail.com
+    web: https://t.me/itisuniqueofficial
+    twitter: https://twitter.com/itisuniquex
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
 # Plugins
