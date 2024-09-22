@@ -1,23 +1,37 @@
-# Mediumish - Jekyll Theme
+# The Blaze Times
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/) &nbsp; | &nbsp; [Buy me a coffee](https://www.wowthemes.net/donate/)
+![The Blaze Times Logo](/assets/images/logo.png)
 
-![mediumish](assets/images/mediumish-jekyll-template.png)
+## Overview
 
+The Blaze Times is your trusted source for the latest breaking news and insightful analysis. Our mission is to keep you informed on politics, culture, and more, providing timely articles and expert commentary that ignite your understanding of the world.
 
-### Copyright
+## Features
 
-Copyright (C) 2019 Sal, https://www.wowthemes.net
+- **Breaking News:** Get real-time updates on current events.
+- **In-Depth Analysis:** Explore detailed articles that provide context and insight.
+- **Diverse Topics:** Coverage spans politics, culture, lifestyle, and more.
 
-**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
+## Getting Started
 
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+Visit our website: [The Blaze Times](https://www.theblazetimes.in)
 
-### Contribute
+### Installation
 
-1. [Fork the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
-2. Clone a copy of your fork on your local
-3. Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
-4. Make necessary changes, commit, push and open a pull request on GitHub.
+You can access our content online without any installation. Simply visit the URL above.
 
-Thank you!
+## Contributing
+
+We welcome contributions! If you have suggestions or feedback, please reach out via our contact page.
+
+## Contact
+
+For inquiries, please email us at [contact@theblazetimes.in](mailto:contact@theblazetimes.in).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Stay updated and engaged with The Blaze Times!
