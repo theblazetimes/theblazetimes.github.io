@@ -61,36 +61,28 @@
             <div class="collapse navbar-collapse" id="navbarMediumish">
                 <!-- Begin Menu -->
                 <ul class="navbar-nav ml-auto">
-                    {% if page.url == "/" %}
-                    <li class="nav-item active">
-                    {% else %}
-                    <li class="nav-item">
-                    {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
-                    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
+    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
-                    </li>
+    <li class="nav-item">
+        <a target="_blank" class="nav-link" href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a>
+    </li>
 
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a>
-                    </li>
+    <li class="nav-item">
+        <a target="_blank" class="nav-link" href="{{ site.baseurl }}/disclaimer">Disclaimer</a>
+    </li>
 
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="{{ site.baseurl }}/disclaimer">Disclaimer</a>
-                    </li>
+    <li class="nav-item">
+        <a target="_blank" class="nav-link" href="{{ site.baseurl }}/terms-and-conditions">Terms and Conditions</a>
+    </li>
 
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="{{ site.baseurl }}/terms-and-conditions">Terms and Conditions</a>
-                    </li>
-
-                    {% include search-lunr.html %}
-                </ul>
+    {% include search-lunr.html %}
+</ul>
                 <!-- End Menu -->
             </div>
         </div>
