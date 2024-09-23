@@ -13,7 +13,7 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
+  The Blaze Times:
     name: The Blaze Times
     display_name: The Blaze Times
     gravatar: 67accb20e06a4954e37ee7c6ea8790e0
@@ -21,7 +21,7 @@ authors:
     web: https://www.theblazetimes.in
     twitter: https://twitter.com/theblazetimes_x
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
+  It Is Unique Official:
     name: It Is Unique Official
     display_name: It Is Unique Official    
     avatar: 'assets/images/avatar.png'
