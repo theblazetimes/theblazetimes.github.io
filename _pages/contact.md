@@ -1,4 +1,9 @@
-# Contact Us
+---
+layout: page
+title: Contact
+permalink: /contact
+comments: true
+---
 
 We’d love to hear from you! If you have any questions, suggestions, or feedback, please don’t hesitate to reach out.
 
