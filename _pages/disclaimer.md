@@ -22,3 +22,7 @@ By using our website, you hereby consent to our disclaimer and agree to its term
 ## Update
 
 Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+
+---
+
+*Last updated: September 24, 2024*
