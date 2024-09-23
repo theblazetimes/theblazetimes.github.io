@@ -144,29 +144,22 @@ post_class: post-template
 <!-- End Comments -->
 
 <!-- Review with LD-JSON -->
-{% if page.rating %}
+{% if page.type %}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-        "@type": "{{ page.type }}",
-        "name": "{{ page.title }}",
-        "image": "{{ site.baseurl }}/{{ page.image }}",
-        "description": "{{ page.description | escape }}"
-    },
-    "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "{{ page.rating }}",
-        "bestRating": "5",
-        "worstRating": "1"
-    },
+    "@type": " {{ page.type }}",
+    "headline": "{{ page.title }}",
+    "image": [
+        "{{ site.baseurl }}/{{ page.image }}"
+    ],
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}",
     "author": {
         "@type": "Person",
-        "name": "{{ author.display_name }}"
+        "name": "{{ page.author.display_name }}"
     },
-    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
     "publisher": {
         "@type": "Organization",
         "name": "{{ site.name }}",
@@ -174,6 +167,11 @@ post_class: post-template
             "@type": "ImageObject",
             "url": "{{ site.baseurl }}/{{ site.logo }}"
         }
+    },
+    "description": "{{ page.description | escape }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
     }
 }
 </script>
