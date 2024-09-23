@@ -1,35 +1,33 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About
 permalink: /about
 comments: true
 ---
 
-<div class="row justify-content-between">
-<div class="col-md-8 pr-5">
+Welcome to **The Blaze Times**, your go-to source for the latest breaking news and insightful analysis in various fields including news, tech, education, and coding.
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+## Our Mission
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+At The Blaze Times, we strive to keep our readers informed about the most important events and trends shaping our world. We believe in delivering accurate, timely, and engaging content that helps you stay updated and make informed decisions.
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+## What We Cover
 
-<h4>Questions or bug reports?</h4>
+- **News**: Stay updated on current events, politics, and social issues.
+- **Tech**: Explore the latest advancements in technology and innovations that impact our daily lives.
+- **Education**: Discover insights, tips, and resources to help you succeed in your educational pursuits.
+- **Coding**: Learn about programming languages, frameworks, and best practices to enhance your coding skills.
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+## Get In Touch
 
-</div>
+We value your feedback and are always eager to hear from our readers. For inquiries, suggestions, or collaborations, please reach out to us at [contact@theblazetimes.in](mailto:contact@theblazetimes.in).
 
-<div class="col-md-4">
+## Visit Us
 
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+Stay connected with us by visiting our website: [The Blaze Times](https://www.theblazetimes.in).
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+Thank you for being a part of our community!
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
+---
 
-</div>
-</div>
-</div>
+*Last updated: September 23, 2024*
