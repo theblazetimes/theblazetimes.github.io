@@ -21,7 +21,7 @@ authors:
     email: theblazetimes@gmail.com
     web: https://www.theblazetimes.in
     twitter: https://twitter.com/theblazetimes_x
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    description: "The Blaze Times delivers breaking news and analysis on politics, culture, and more. Stay informed with our expert commentary and timely updates."
   It Is Unique Official:
     name: It Is Unique Official
     display_name: It Is Unique Official
@@ -29,7 +29,7 @@ authors:
     email: itisuniqueofficial@gmail.com
     web: https://t.me/itisuniqueofficial
     twitter: https://twitter.com/itisuniquex
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    description: "It Is Unique Official is a tech-focused brand by Jaydatt Khodave, offering programming tools, tutorials, and resources for developers."
 
 # Plugins
 plugins:
