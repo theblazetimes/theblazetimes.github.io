@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "We all wait for summer"
-type: "Article"
+type: "NewsArticle"
 author: It Is Unique Official
 categories: [ Jekyll, tutorial ]
 image: assets/images/5.jpg
