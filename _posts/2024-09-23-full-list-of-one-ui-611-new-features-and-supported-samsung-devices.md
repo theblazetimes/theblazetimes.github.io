@@ -51,6 +51,8 @@ This new feature automatically changes your wallpaper based on the weather and t
 **6. Circle to Search**  
 Identify songs or solve complex math problems simply by drawing a circle around the desired area on your screen. It's your new go-to tool for instant knowledge.
 
+---
+
 ## Camera and Gallery Enhancements in One UI 6.1.1
 
 Samsung’s camera app gets even better with **One UI 6.1.1**, offering new functionalities tailored for photography enthusiasts.
@@ -79,7 +81,9 @@ With **Motion Clipper**, you can turn motion photos into GIFs or moving stickers
 - Galaxy Z Fold 6, 5, 4  
 - Galaxy Z Flip 6, 5, 4  
 - Galaxy S24, S23, S22, S23 FE  
-- Galaxy Tab S9, S8 series  
+- Galaxy Tab S9, S8 series
+
+---
 
 ## Expert RAW Features in One UI 6.1.1
 
@@ -99,6 +103,8 @@ Edit DNG (Digital Negative) raw images directly in the Galaxy Photo Editor. This
 - Galaxy S24, S23, S22, S23 FE  
 - Galaxy Tab S9, S8 series  
 
+---
+
 ## Supported Devices for One UI 6.1.1
 
 The **One UI 6.1.1** update is currently available on the following Samsung devices:
@@ -116,5 +122,7 @@ The **One UI 6.1.1** update is currently available on the following Samsung devi
 **Expected Supported Devices:**  
 - Galaxy Z Fold 3, Z Flip 3  
 - Galaxy A55, A54, A35, A34  
+
+---
 
 With its AI-powered tools and new camera enhancements, **One UI 6.1.1** continues to push the boundaries of what a smartphone can do. Stay tuned for more updates as Samsung expands availability to more devices in the coming weeks!
