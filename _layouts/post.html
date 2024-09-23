@@ -145,6 +145,7 @@ post_class: post-template
 
 <!-- Review with LD-JSON -->
 {% if page.rating %}
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -163,9 +164,18 @@ post_class: post-template
     },
     "author": {
         "@type": "Person",
-        "name": "{{ page.author.display_name }}"
+        "name": "{{ author.display_name }}"
     },
-    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}"
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.baseurl }}/{{ site.logo }}"
+        }
+    }
 }
 </script>
+
 {% endif %}
