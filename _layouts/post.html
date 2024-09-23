@@ -49,11 +49,16 @@ post_class: post-template
 
             <!-- Post Featured Image -->
             {% if page.image %}
-            {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-            {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-            {% endif %}
+                {% if site.lazyimages == "enabled" %}
+                <img class="featured-image img-fluid lazyimg" 
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" 
+                     data-src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" 
+                     alt="{{ page.title }}">
+                {% else %}
+                <img class="featured-image img-fluid" 
+                     src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" 
+                     alt="{{ page.title }}">
+                {% endif %}
             {% endif %}
 
             <!-- Post Content -->
@@ -73,7 +78,8 @@ post_class: post-template
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
-                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+                <strong class="mr-1">Rating:</strong> 
+                {% include star_rating.html %}
             </div>
             {% endif %}
 
@@ -82,7 +88,7 @@ post_class: post-template
                 <small>
                     <span class="post-date">
                         <time class="post-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-                    </span>           
+                    </span>
                     {% if page.last_modified_at %}
                     (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: '%b %-d, %Y' }}</time>)
                     {% endif %}
@@ -145,11 +151,10 @@ post_class: post-template
 
 <!-- Review with LD-JSON -->
 {% if page.rating %}
-
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "@type": "{{ page.type }}",
+    "@type": "Product",
     "name": "{{ page.title }}",
     "image": "{{ site.baseurl }}/{{ page.image }}",
     "description": "{{ page.description | escape }}",
@@ -181,8 +186,9 @@ post_class: post-template
     "offers": {
         "@type": "Offer",
         "url": "{{ site.baseurl }}{{ page.url }}",
-        "priceCurrency": "INR",
+        "priceCurrency": "{{ page.priceCurrency }}",
         "price": "{{ page.price }}",
+        "priceValidUntil": "{{ page.priceValidUntil }}",
         "availability": "http://schema.org/InStock",
         "seller": {
             "@type": "Organization",
@@ -191,5 +197,4 @@ post_class: post-template
     }
 }
 </script>
-
 {% endif %}
