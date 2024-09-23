@@ -5,12 +5,7 @@ description: "Explore One UI 6.1.1's new AI features like Sketch to Image and Au
 author: The Blaze Times
 categories: [ One UI 6, Android 15 ]
 tags: [ Samsung, Galaxy ]
-image: 
-  path: assets/images/one-ui-611.jpg
-  alt: "One UI 6.1.1 Features"
-  title: "One UI 6.1.1 Overview"
-  caption: "Explore the new features in One UI 6.1.1."
-  description: "An overview of the innovative features introduced in One UI 6.1.1."
+image: assets/images/one-ui-611.jpg
 ---
 
 
