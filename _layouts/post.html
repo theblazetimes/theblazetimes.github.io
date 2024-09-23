@@ -151,7 +151,7 @@ post_class: post-template
     "@type": "Review",
     "itemReviewed": {
         "@type": "{{ page.type }}", 
-        "headline": "{{ page.title }}",
+        "name": "{{ page.title }}",  // Added item name
         "author": {
             "@type": "Person",
             "name": "{{ author.display_name }}"
@@ -178,6 +178,15 @@ post_class: post-template
         "ratingValue": "{{ page.rating }}",
         "bestRating": "5",
         "worstRating": "1"
+    },
+    "author": {  // Added author field at review level
+        "@type": "Person",
+        "name": "{{ author.display_name }}"
+    },
+    "aggregateRating": {  // Optional: include this if you have aggregate ratings
+        "@type": "AggregateRating",
+        "ratingValue": "{{ page.aggregate_rating_value }}",  // Ensure this variable exists
+        "reviewCount": "{{ page.review_count }}"  // Ensure this variable exists
     }
 }
 </script>
