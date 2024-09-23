@@ -5,6 +5,8 @@ description: "Galaxy S24 FE may cost $50 more than S23 FE in the US. Check out e
 author: It Is Unique Official
 categories: [ Galaxy, Samsung ]
 image: assets/images/galaxy-s24-fe-may-cost-more-than-s23-fe-in-the-usa.jpg
+featured: true
+hidden: true
 ---
 
 Samsung is preparing to launch its highly anticipated Galaxy S24 Fan Edition (FE), with the official debut set for September 26 in Vietnam. Ahead of the release, the price for US customers has been leaked, giving us a glimpse of what to expect.
