@@ -10,6 +10,7 @@ disqus: 'the-blaze-times'
 mailchimp-list: 'https://theblazetimes.us9.list-manage.com/subscribe/post?u=93fe5eb8eeceed33701ba0e8f&amp;id=ae9e5d4588&amp;f_id=00c6c2e1f0'
 include: ["_pages"]
 permalink: /:title/
+timezone: "Asia/Kolkata"
 
 # Authors
 authors:
