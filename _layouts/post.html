@@ -144,34 +144,50 @@ post_class: post-template
 <!-- End Comments -->
 
 <!-- Review with LD-JSON -->
-{% if page.type %}
+{% if page.rating %}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "@type": " {{ page.type }}",
-    "headline": "{{ page.title }}",
-    "image": [
-        "{{ site.baseurl }}/{{ page.image }}"
-    ],
-    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-    "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}",
-    "author": {
-        "@type": "Person",
-        "name": "{{ page.author.display_name }}"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "{{ site.name }}",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "{{ site.baseurl }}/{{ site.logo }}"
-        }
-    },
+    "@type": "{{ page.type }}",
+    "name": "{{ page.title }}",
+    "image": "{{ site.baseurl }}/{{ page.image }}",
     "description": "{{ page.description | escape }}",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.url }}{{ page.url }}"
+    "sku": "{{ page.sku }}",
+    "brand": {
+        "@type": "Brand",
+        "name": "{{ page.brand }}"
+    },
+    "review": {
+        "@type": "Review",
+        "author": {
+            "@type": "Person",
+            "name": "{{ author.display_name }}"
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "{{ page.rating }}",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "reviewBody": "{{ page.review_body | escape }}",
+        "datePublished": "{{ page.date | date: '%Y-%m-%d' }}"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ page.aggregate_rating_value }}",
+        "reviewCount": "{{ page.review_count }}"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": "{{ site.baseurl }}{{ page.url }}",
+        "priceCurrency": "INR",
+        "price": "{{ page.price }}",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "{{ site.name }}"
+        }
     }
 }
 </script>
