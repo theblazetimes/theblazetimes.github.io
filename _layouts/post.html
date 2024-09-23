@@ -150,27 +150,9 @@ post_class: post-template
     "@context": "http://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "{{ page.type }}", 
-        "name": "{{ page.title }}",  // Added item name
-        "author": {
-            "@type": "Person",
-            "name": "{{ author.display_name }}"
-        },
-        "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-        "publisher": {
-            "@type": "Organization",
-            "name": "{{ site.name }}",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "{{ site.baseurl }}/{{ site.logo }}"
-            }
-        },
-        "image": {
-            "@type": "ImageObject",
-            "url": "{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-            "height": "800",
-            "width": "1200"
-        },
+        "@type": "{{ page.type }}",
+        "name": "{{ page.title }}",
+        "image": "{{ site.baseurl }}/{{ page.image }}",
         "description": "{{ page.description | escape }}"
     },
     "reviewRating": {
@@ -179,15 +161,11 @@ post_class: post-template
         "bestRating": "5",
         "worstRating": "1"
     },
-    "author": {  // Added author field at review level
+    "author": {
         "@type": "Person",
-        "name": "{{ author.display_name }}"
+        "name": "{{ page.author.display_name }}"
     },
-    "aggregateRating": {  // Optional: include this if you have aggregate ratings
-        "@type": "AggregateRating",
-        "ratingValue": "{{ page.aggregate_rating_value }}",  // Ensure this variable exists
-        "reviewCount": "{{ page.review_count }}"  // Ensure this variable exists
-    }
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}"
 }
 </script>
 {% endif %}
