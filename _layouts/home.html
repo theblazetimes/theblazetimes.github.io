@@ -31,6 +31,11 @@
     <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
     <link rel='dns-prefetch' href='//pagead2.googlesyndication.com'/>
 
+    <!-- Google AdSense Code -->
+    {% if site.adsense == "enabled" %}
+        {% include adsbygoogle.html %}
+    {% endif %}
+
 </head>
 
 {% if jekyll.environment == 'production' %}
