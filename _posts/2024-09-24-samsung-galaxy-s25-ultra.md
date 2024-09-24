@@ -17,6 +17,8 @@ review_count: 100
 price: "124999"
 priceCurrency: "INR"
 priceValidUntil: "2025-01-25"
+featured: true
+hidden: true
 ---
 
 The Samsung Galaxy S25 Ultra epitomizes innovation, seamlessly integrating state-of-the-art technology with a sophisticated design. This flagship smartphone features an expansive 6.8-inch Dynamic AMOLED 2X display, delivering breathtaking visuals with a 120Hz refresh rate and HDR10+ support. Whether you’re gaming, streaming, or browsing, this display promises a smooth and vibrant experience. Powered by either the Exynos 2500 or Snapdragon 8 Gen 4 chipset and offering up to 16GB of RAM, the Galaxy S25 Ultra effortlessly handles even the most demanding tasks.
