@@ -39,16 +39,9 @@
   <body>
     
     <p><b>404.</b> <ins>That’s an error.</ins></p>
-    <p id="error-message"></p>
+    <p>The requested URL was not found on this server. <ins>That’s all we know.</ins></p>
     <p><a href="https://www.theblazetimes.in">Go to Homepage</a></p>
     
-    <script>
-      const pathArray = window.location.pathname.split('/');
-      const slug = pathArray[pathArray.length - 1] || "home";
-      const errorMessage = `The requested URL <code>/${slug}</code> was not found on this server. <ins>That’s all we know.</ins>`;
-      document.getElementById('error-message').innerHTML = errorMessage;
-    </script>
-  
   </body>
 
 </html>
