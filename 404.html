@@ -1,10 +1,55 @@
----
-layout: default
-title: 404
-permalink: /404.html
----
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Start -->
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" name="viewport">
 
-<div class="text-center">
-<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Page does not exist!</h1>
-<p>Please use the search bar at the top or visit our <a href="{{site.baseurl}}/">homepage</a>!</p>
-</div>
+    <!-- Favicon -->
+    <link rel="icon" href="{{ site.url }}/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
+
+    {% seo %}
+
+    <!-- CSS -->
+    <link href="{{ site.url }}/assets/css/404.css" rel="stylesheet">
+    <link href="404.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+
+    <!-- dns-prefetch -->
+    <link rel="dns-prefetch" href="//www.theblazetimes.in" />
+    <link rel="dns-prefetch" href="//theblazetimes.github.io" />
+    <link rel="dns-prefetch" href="//disqus.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+
+    {% if jekyll.environment == 'production' %}
+    <!-- Change your GA id in _config.yml -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+
+    <!-- Head End -->
+  </head>
+
+  <!-- Body Start -->
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <p>Oops! The page you're looking for doesn't exist.</p>
+      <a href="{{ site.url }}">Go back to Home</a>
+    </div>
+    <!-- Body End -->
+  </body>
+</html>
