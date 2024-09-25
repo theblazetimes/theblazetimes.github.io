@@ -1,10 +1,54 @@
 ---
-layout: default
-title: 404
-permalink: /404.html
+layout: null
 ---
 
-<div class="text-center">
-<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Page does not exist!</h1>
-<p>Please use the search bar at the top or visit our <a href="{{site.baseurl}}/">homepage</a>!</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"/>
+    
+    <title>Not Found (404)</title>
+    
+    <style>
+      * { margin: 0; padding: 0; }
+      html, code { font: 15px/22px Arial, sans-serif; }
+      html { background: #fff; color: #222; height: 100%; }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        padding: 30px 0 15px;
+        text-align: center;
+      }
+      p { margin: 11px 0 22px; }
+      ins { color: #777; text-decoration: none; }
+      a { color: #1a0dab; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      @media screen and (max-width: 772px) {
+        body { padding: 0; }
+      }
+    </style>
+  
+  </head>
+  
+  <body>
+    
+    <p><b>404.</b> <ins>That’s an error.</ins></p>
+    <p id="error-message"></p>
+    <p><a href="{{ site.url }}">Go to Homepage</a></p>
+    
+    <script>
+      const pathArray = window.location.pathname.split('/');
+      const slug = pathArray[pathArray.length - 1] || "home";
+      const errorMessage = `The requested URL <code>/${slug}</code> was not found on this server. <ins>That’s all we know.</ins>`;
+      document.getElementById('error-message').innerHTML = errorMessage;
+    </script>
+  
+  </body>
+
+</html>
