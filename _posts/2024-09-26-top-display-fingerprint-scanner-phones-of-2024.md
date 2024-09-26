@@ -5,9 +5,9 @@ description: "Explore the best display fingerprint scanner phones in 2024, offer
 author: It Is Unique Official
 categories: [ Mobile Phones, Fingerprint Scanners, Technology ]
 tags: [ Display Fingerprint Scanner, Samsung Galaxy S23 Ultra, OnePlus 11, Vivo X90 Pro, Google Pixel 7 Pro, Oppo Reno 9 Pro+ ]
-image: /assets/images/display-fingerprint-scanner-phones.jpg
+image: assets/images/display-fingerprint-scanner-phones.jpg
 author_url: "https://gravatar.com/itisuniqueofficial"
-gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+gravatar: "beb6bb7addac22582e879ea50bbacfa2"
 keywords: "Fingerprint scanner phones, Display fingerprint mobiles, Best fingerprint phones 2024"
 ---
 
