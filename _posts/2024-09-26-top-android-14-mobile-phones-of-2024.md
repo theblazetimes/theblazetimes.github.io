@@ -5,9 +5,9 @@ description: "Explore the best Android 14 mobile phones in 2024, featuring top-t
 author: It Is Unique Official
 categories: [ Mobile Phones, Android, Technology ]
 tags: [ Android 14, Google Pixel 8 Pro, Samsung Galaxy S23 Ultra, OnePlus 12, Xiaomi 13 Pro, Samsung Galaxy A54 5G, Google Pixel 7a ]
-image: /assets/images/android-14.jpg
+image: assets/images/android-14.jpg
 author_url: "https://gravatar.com/itisuniqueofficial"
-gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+gravatar: "beb6bb7addac22582e879ea50bbacfa2"
 keywords: "Android 14 phones, Best Android 14 smartphones, Android 14 features"
 ---
 
