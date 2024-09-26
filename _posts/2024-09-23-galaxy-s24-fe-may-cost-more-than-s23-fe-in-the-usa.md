@@ -4,7 +4,7 @@ title:  "Galaxy S24 FE May Cost More Than S23 FE In The USA"
 description: "Galaxy S24 FE may cost $50 more than S23 FE in the US. Check out expected specs and pricing."
 author: It Is Unique Official
 author_url: "https://gravatar.com/itisuniqueofficial"
-gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+gravatar: "beb6bb7addac22582e879ea50bbacfa2"
 categories: [ Galaxy, Samsung ]
 tags: [ Galaxy S24 FE, Galaxy S23 FE, Samsung pricing, smartphone news ]
 image: assets/images/galaxy-s24-fe-may-cost-more-than-s23-fe-in-the-usa.jpg
