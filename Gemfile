@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Specify the Jekyll version you want to use
-gem 'jekyll', '>= 4.2.0' # Adjust this to the version you need
+gem 'jekyll', '4.3.0' # Adjusted to the version you need
 
 # Windows specific dependency
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
