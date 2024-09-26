@@ -82,40 +82,40 @@
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
-      {
-      "@context": "https://schema.org",
-      "@graph": [
-      {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": ["NewsMediaOrganization", "Organization"],
       "@id": "{{ site.url }}#organization",
       "name": "{{ site.name }}",
       "url": "{{ site.url }}",
       "sameAs": [
-      "https://www.facebook.com/{{ site.facebook }}",
-      "https://twitter.com/{{ site.x }}"
+        "https://www.facebook.com/{{ site.facebook }}",
+        "https://twitter.com/{{ site.x }}"
       ],
       "logo": {
-      "@type": "ImageObject",
-      "@id": "{{ site.url }}#logo",
-      "url": "{{ site.logo }}",
-      "contentUrl": "{{ site.logo }}",
-      "caption": "{{ site.title }}",
-      "inLanguage": "en-US",
-      "width": "261",
-      "height": "68"
+        "@type": "ImageObject",
+        "@id": "{{ site.url }}#logo",
+        "url": "{{ site.logo }}",
+        "contentUrl": "{{ site.logo }}",
+        "caption": "{{ site.title }}",
+        "inLanguage": "en-US",
+        "width": "261",
+        "height": "68"
       }
-      },
-      {
+    },
+    {
       "@type": "WebSite",
       "@id": "{{ site.url }}#website",
       "url": "{{ site.url }}",
       "name": "{{ site.name }}",
       "publisher": {
-      "@id": "{{ site.url }}#organization"
+        "@id": "{{ site.url }}#organization"
       },
       "inLanguage": "en-US"
-      },
-      {
+    },
+    {
       "@type": "WebPage",
       "@id": "{{ site.url }}{{ page.url }}#webpage",
       "url": "{{ site.url }}{{ page.url }}",
@@ -123,58 +123,91 @@
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
       "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
       "isPartOf": {
-      "@id": "{{ site.url }}#website"
+        "@id": "{{ site.url }}#website"
       },
       "inLanguage": "en-US",
       "mainEntityOfPage": {
-      "@id": "{{ site.url }}{{ page.url }}"
+        "@id": "{{ site.url }}{{ page.url }}"
       },
       "primaryImageOfPage": {
-      "@id": "{{ site.url}}/{{ page.image }}"
+        "@id": "{{ site.url }}/{{ page.image }}"
       }
-      },
-      {
+    },
+    {
       "@type": "Person",
       "@id": "{{ page.author_url }}",
       "name": "{{ page.author }}",
       "url": "{{ page.author_url }}",
       "image": {
-      "@type": "ImageObject",
-      "@id": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
-      "url": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
-      "caption": "{{ page.author }}",
-      "inLanguage": "en-US"
+        "@type": "ImageObject",
+        "@id": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
+        "url": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
+        "caption": "{{ page.author }}",
+        "inLanguage": "en-US"
       },
       "worksFor": {
-      "@id": "{{ site.url }}#organization"
+        "@id": "{{ site.url }}#organization"
       }
-      },
-      {
+    },
+    {
       "@type": "NewsArticle",
       "headline": "{{ page.title }}",
       "keywords": "{{ page.keywords }}",
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
       "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
       "author": {
-      "@id": "{{ page.author_url }}"
+        "@id": "{{ page.author_url }}"
       },
       "publisher": {
-      "@id": "{{ site.url }}#organization"
+        "@id": "{{ site.url }}#organization"
       },
       "description": "{{ page.description }}",
       "name": "{{ page.title }}",
       "@id": "{{ site.url }}{{ page.url }}#richSnippet",
       "image": {
-      "@id": "{{ site.url }}/{{ page.image }}"
+        "@id": "{{ site.url }}/{{ page.image }}"
       },
       "inLanguage": "en-US",
       "mainEntityOfPage": {
-      "@id": "{{ site.url }}{{ page.url }}"
+        "@id": "{{ site.url }}{{ page.url }}"
       }
-      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "{{ site.url }}/{{ page.image }}#primaryImage",
+      "url": "{{ site.url }}/{{ page.image }}",
+      "caption": "{{ page.title }} - Featured Image",
+      "inLanguage": "en-US",
+      "width": "1980",
+      "height": "1080"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ site.url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "{{ site.url }}",
+            "name": "Home",
+            "description": "Home page of {{ site.name }}"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "{{ site.url }}{{ page.url }}",
+            "name": "{{ page.title }}",
+            "description": "Article page of {{ page.title }}"
+          }
+        }
       ]
-      }
-    </script>
+    }
+  ]
+}
+</script>
     
   </head>
     
