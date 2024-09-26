@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Best Slim and Lightweight Mobile Phones Of 2024"
-description: "Discover the top slim and lightweight mobile phones in 2024 that combine sleek designs with powerful performance."
+title:  "Best Slim and Lightweight Mobile Phones For 2024"
+description: "Check out the top slim and lightweight smartphones of 2024, offering sleek designs and powerful performance."
 author: It Is Unique Official
-categories: [ Mobile Phones, Slim Phones, Lightweight Phones ]
-tags: [ Samsung Galaxy S23, iPhone 15, Xiaomi 13, Google Pixel 7a, Oppo Reno 8 Pro, Slim Phones, Lightweight Phones ]
+categories: [ Mobile Phones, Slim Phones, Lightweight Devices ]
+tags: [ Slim Phones, Lightweight Phones, Samsung, Xiaomi, OnePlus ]
 image: /assets/images/slim-and-lightweight-mobile-phones.jpg
+author_url: "https://gravatar.com/itisuniqueofficial"
+gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+keywords: "Slim phones 2024, Lightweight smartphones, Best thin mobile phones"
 ---
+
 
 As 5G networks continue to expand across India, the demand for 5G-enabled smartphones is at an all-time high. Samsung, one of the leading smartphone manufacturers globally, offers a range of 5G devices that combine cutting-edge technology with reliable performance. From budget-friendly options to premium models, Samsung has something for everyone in the 5G space.
 
