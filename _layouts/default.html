@@ -87,7 +87,7 @@
   "@graph": [
     {
       "@type": ["NewsMediaOrganization", "Organization"],
-      "@id": "{{ site.url }}#organization",
+      "@id": "{{ site.url }}/#organization",
       "name": "{{ site.name }}",
       "url": "{{ site.url }}",
       "sameAs": [
@@ -96,7 +96,7 @@
       ],
       "logo": {
         "@type": "ImageObject",
-        "@id": "{{ site.url }}#logo",
+        "@id": "{{ site.url }}/#logo",
         "url": "{{ site.logo }}",
         "contentUrl": "{{ site.logo }}",
         "caption": "{{ site.title }}",
@@ -107,23 +107,23 @@
     },
     {
       "@type": "WebSite",
-      "@id": "{{ site.url }}#website",
+      "@id": "{{ site.url }}/#website",
       "url": "{{ site.url }}",
       "name": "{{ site.name }}",
       "publisher": {
-        "@id": "{{ site.url }}#organization"
+        "@id": "{{ site.url }}/#organization"
       },
       "inLanguage": "en-US"
     },
     {
       "@type": "WebPage",
-      "@id": "{{ site.url }}{{ page.url }}#webpage",
+      "@id": "{{ site.url }}{{ page.url }}/#webpage",
       "url": "{{ site.url }}{{ page.url }}",
       "name": "{{ page.title }}",
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
       "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
       "isPartOf": {
-        "@id": "{{ site.url }}#website"
+        "@id": "{{ site.url }}/#website"
       },
       "inLanguage": "en-US",
       "mainEntityOfPage": {
@@ -146,7 +146,7 @@
         "inLanguage": "en-US"
       },
       "worksFor": {
-        "@id": "{{ site.url }}#organization"
+        "@id": "{{ site.url }}/#organization"
       }
     },
     {
@@ -159,11 +159,11 @@
         "@id": "{{ page.author_url }}"
       },
       "publisher": {
-        "@id": "{{ site.url }}#organization"
+        "@id": "{{ site.url }}/#organization"
       },
       "description": "{{ page.description }}",
       "name": "{{ page.title }}",
-      "@id": "{{ site.url }}{{ page.url }}#richSnippet",
+      "@id": "{{ site.url }}{{ page.url }}/#richSnippet",
       "image": {
         "@id": "{{ site.url }}/{{ page.image }}"
       },
@@ -174,7 +174,7 @@
     },
     {
       "@type": "ImageObject",
-      "@id": "{{ site.url }}/{{ page.image }}#primaryImage",
+      "@id": "{{ site.url }}/{{ page.image }}/#primaryImage",
       "url": "{{ site.url }}/{{ page.image }}",
       "caption": "{{ page.title }} - Featured Image",
       "inLanguage": "en-US",
@@ -183,7 +183,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "{{ site.url }}#breadcrumb",
+      "@id": "{{ site.url }}/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
