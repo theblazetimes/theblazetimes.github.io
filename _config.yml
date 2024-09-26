@@ -10,6 +10,7 @@ mailchimp-list: 'https://theblazetimes.us9.list-manage.com/subscribe/post?u=93fe
 include: ["_pages"]
 permalink: /:title/
 timezone: "Asia/Kolkata"
+x: "@theblazetimes_x"
 
 # Authors
 authors:
