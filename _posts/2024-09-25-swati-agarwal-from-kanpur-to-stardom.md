@@ -3,9 +3,12 @@ layout: post
 title:  "Swati Agarwal: From Kanpur To Stardom"
 description: "The Multifaceted Journey of an Acclaimed Producer, Actress, and Production Manager Shaping Indian Entertainment"
 author: The Blaze Times
+author_url: "https://gravatar.com/theblazetimes"
+gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
 categories: [ Entertainment, Profiles, Film Industry ]
 tags: [ Swati Agarwal, Indian Actress, Film Producer, Entertainment, Bollywood ]
 image: assets/images/swati-agarwal-from-kanpur-to-stardom.jpg  
+keywords: "Swati Agarwal, Indian actress, Bollywood producer, entertainment industry, film profiles, Kanpur actress"
 ---
 
 Born on **April 1, 1989**, in **Kanpur, Uttar Pradesh**, Swati Agarwal has emerged as a **multifaceted talent** in the **Indian entertainment industry**. From her humble beginnings as an **actress** to her impactful role as a **producer** and **production manager**, Swati's journey is one of **dedication**, **passion**, and **versatility**.
