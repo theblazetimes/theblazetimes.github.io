@@ -14,7 +14,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
-    jekyll (4.2.0)  # Updated Jekyll version
+    jekyll (3.9.0)
       addressable (~> 2.7)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -30,14 +30,14 @@ GEM
     jekyll-archives (2.1.1)
       jekyll (>= 3.6)
     jekyll-feed (0.15.0)
-      jekyll (~> 4.2)  # Updated dependency to match Jekyll 4.2
+      jekyll (~> 3.9)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (2.1.0)
       sass (~> 3.7)
     jekyll-seo-tag (2.8.0)
-      jekyll (~> 4.2)  # Updated dependency to match Jekyll 4.2
+      jekyll (~> 3.9)
     jekyll-sitemap (1.4.0)
-      jekyll (~> 4.2)  # Updated dependency to match Jekyll 4.2
+      jekyll (~> 3.9)
     jekyll-watch (2.2.1)
       listen (~> 3.1)
     kramdown (2.3.1)
