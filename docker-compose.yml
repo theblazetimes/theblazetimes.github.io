@@ -1,7 +1,10 @@
 jekyll:
-    image: jekyll/jekyll:latest
-    command: jekyll serve --force_polling
-    ports:
-        - 4000:4000
-    volumes:
-        - .:/srv/jekyll
+  image: jekyll/jekyll:4.2.0  # Use a specific version for stability
+  command: jekyll serve
+  ports:
+    - "4000:4000"
+  volumes:
+    - .:/srv/jekyll:cached  # Use cached option for better performance
+  environment:
+    JEKYLL_ENV: development  # Optional, for specifying environment
+  # Remove force_polling if not needed
