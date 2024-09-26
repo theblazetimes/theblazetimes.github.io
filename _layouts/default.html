@@ -153,8 +153,8 @@
       "@type": "NewsArticle",
       "headline": "{{ page.title }}",
       "keywords": "{{ page.keywords }}",
-      "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
-      "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}",
+      "datePublished": "{{ page.time | date: '%Y-%m-%dT%H:%M:%S' }}",
+      "dateModified": "{{ page.time | date: '%Y-%m-%dT%H:%M:%S' }}",
       "author": {
       "@id": "{{ page.author_url }}"
       },
