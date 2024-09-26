@@ -80,7 +80,63 @@
     
     <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json" class="rank-math-schema-pro">
+      {
+      "@context": "https://schema.org",
+      "@graph": [
+      {
+      "@type": ["NewsMediaOrganization", "Organization"],
+      "@id": "{{ site.url }}/#organization",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+      "https://www.facebook.com/{{ site.facebook }}",
+      "https://x.com/{{ site.x }}"
+      ],
+      "logo": {
+      "@type": "ImageObject",
+      "@id": "{{ site.url }}/#logo",
+      "url": "{{ site.logo }}",
+      "contentUrl": "{{ site.logo }}",
+      "caption": "{{ site.title }}",
+      "inLanguage": "en-US",
+      "width": "261",
+      "height": "68"
+      }
+      },
+      {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}",
+      "name": "{{ site.name }}",
+      "publisher": {
+      "@id": "{{ site.url }}/#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+      }
+      },
+      {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}/#webpage",
+      "url": "{{ site.url }}",
+      "name": "{{ site.name }}",
+      "description": "{{ site.description }}",
+      "datePublished": "{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+      "inLanguage": "en-US",
+      "isPartOf": {
+      "@id": "{{ site.url }}/#website"
+      }
+      }
+      ]
+      }
+    </script>
+    
   </head>
     
     {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
