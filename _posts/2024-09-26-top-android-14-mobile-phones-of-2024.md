@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Top Android 14 Mobile Phones of 2024"
+title:  "Top Android 14 Mobile Phones Of 2024"
 description: "Explore the best Android 14 mobile phones in 2024, featuring top-tier performance, innovative features, and the latest updates."
 author: It Is Unique Official
 categories: [ Mobile Phones, Android, Technology ]
