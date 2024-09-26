@@ -1,10 +1,10 @@
 jekyll:
-  image: jekyll/jekyll:4.2.0  # Use a specific version for stability
-  command: jekyll serve
+  image: jekyll/jekyll:4.2.0  # Specific version for stability
+  command: jekyll serve --watch --force_polling  # Keep force_polling if needed, or just --watch
   ports:
     - "4000:4000"
   volumes:
-    - .:/srv/jekyll:cached  # Use cached option for better performance
+    - .:/srv/jekyll:cached  # Improve performance with cached volumes
   environment:
-    JEKYLL_ENV: development  # Optional, for specifying environment
-  # Remove force_polling if not needed
+    JEKYLL_ENV: development  # Environment variable to set development mode
+  working_dir: /srv/jekyll  # Set working directory to avoid relative path issues
