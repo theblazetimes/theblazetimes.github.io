@@ -5,20 +5,14 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-// See the Getting Started docs for more information:
-// https://getbootstrap.com/getting-started/#support-ie10-width
-
 (function () {
-  'use strict'
+  'use strict';
 
-  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-    var msViewportStyle = document.createElement('style')
-    msViewportStyle.appendChild(
-      document.createTextNode(
-        '@-ms-viewport{width:auto!important}'
-      )
-    )
-    document.head.appendChild(msViewportStyle)
+  // Check for IE Mobile 10
+  if (/IEMobile\/10\.0/.test(navigator.userAgent)) {
+    // Create a style element for the viewport hack
+    var style = document.createElement('style');
+    style.textContent = '@-ms-viewport{width:auto!important}';
+    document.head.appendChild(style);
   }
-
-}())
+})();
