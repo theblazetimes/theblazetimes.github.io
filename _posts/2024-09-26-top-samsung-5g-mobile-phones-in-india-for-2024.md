@@ -5,9 +5,9 @@ description: "Discover the best Samsung 5G mobile phones available in India in 2
 author: It Is Unique Official
 categories: [ Samsung, 5G Mobile Phones, Technology ]
 tags: [ Samsung, 5G Phones, Galaxy A54 5G, Galaxy M34 5G, Galaxy F23 5G, Galaxy S23, Galaxy S22 ]
-image: /assets/images/samsung-5g-mobile-in-india-2024.jpg
+image: /assets/images/samsung-5g-mobile-in-india.jpg
 author_url: "https://gravatar.com/itisuniqueofficial"
-gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+gravatar: "beb6bb7addac22582e879ea50bbacfa2"
 keywords: "Samsung 5G phones, Best Samsung 5G mobiles, 5G phones under 20000"
 ---
 
