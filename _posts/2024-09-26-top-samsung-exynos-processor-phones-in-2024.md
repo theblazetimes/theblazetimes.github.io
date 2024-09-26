@@ -5,9 +5,9 @@ description: "Discover the best Samsung Exynos processor phones available in 202
 author: It Is Unique Official
 categories: [ Mobile Phones, Samsung, Exynos ]
 tags: [ Exynos, Samsung Galaxy S23, Galaxy A54 5G, Galaxy M34 5G, Galaxy F23 5G, Galaxy S22 Ultra ]
-image: /assets/images/samsung-exynos.jpg
+image: assets/images/samsung-exynos.jpg
 author_url: "https://gravatar.com/itisuniqueofficial"
-gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+gravatar: "beb6bb7addac22582e879ea50bbacfa2"
 keywords: "Samsung Exynos phones, Exynos processor mobile, Best Exynos phones 2024"
 ---
 
