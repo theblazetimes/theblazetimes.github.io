@@ -2,7 +2,7 @@
 name: "The Blaze Times"
 title: "The Blaze Times"
 description: "Get the latest breaking news and insightful analysis with The Blaze Times. Stay updated on politics, culture, and more."
-logo: 'assets/images/logo.png'
+logo: 'https://www.theblazetimes.in/logo.png'
 favicon: 'favicon.ico'
 google_analytics: 'G-J47BDWDNY1'
 disqus: 'the-blaze-times'
@@ -11,6 +11,10 @@ include: ["_pages"]
 permalink: /:title/
 timezone: "Asia/Kolkata"
 x: "@theblazetimes_x"
+author: "The Blaze Times"
+facebook: "theblazetimes"
+author_url: "https://gravatar.com/theblazetimes"
+author_image: "https://www.gravatar.com/avatar/67accb20e06a4954e37ee7c6ea8790e0?s=250&d=mm&r=x"
 
 # Authors
 authors:
