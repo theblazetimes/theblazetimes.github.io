@@ -5,9 +5,9 @@ description: "Check out the top slim and lightweight smartphones of 2024, offeri
 author: It Is Unique Official
 categories: [ Mobile Phones, Slim Phones, Lightweight Devices ]
 tags: [ Slim Phones, Lightweight Phones, Samsung, Xiaomi, OnePlus ]
-image: /assets/images/slim-and-lightweight-mobile-phones.jpg
+image: assets/images/slim-and-lightweight-mobile-phones.jpg
 author_url: "https://gravatar.com/itisuniqueofficial"
-gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
+gravatar: "beb6bb7addac22582e879ea50bbacfa2"
 keywords: "Slim phones 2024, Lightweight smartphones, Best thin mobile phones"
 ---
 
