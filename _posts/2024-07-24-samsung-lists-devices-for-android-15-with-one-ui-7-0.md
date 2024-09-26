@@ -3,9 +3,12 @@ layout: post
 title: "Samsung Lists Devices For Android 15 With One UI 7.0"
 description: "Samsung announces the list of devices that will receive the Android 15 and One UI 7.0 update, covering flagship phones, foldables, and mid-range models. Learn about the eligible devices and key features of the new update."
 author: The Blaze Times
+author_url: "https://gravatar.com/theblazetimes"
+gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
 categories: [Technology, Samsung, Android]
 tags: [Samsung, Android 15, One UI 7.0, Galaxy S Series, Galaxy Z Series, Galaxy A Series, Galaxy Tab, Galaxy Note]
 image: assets/images/samsung-lists-devices-for-android-15-with-one-ui-7-0.jpg
+keywords: "Samsung Android 15 update, One UI 7.0 features, eligible Samsung devices, Galaxy S Series, Galaxy Z Series"
 ---
 
 Samsung has officially announced the list of devices set to receive the Android 15 update alongside its latest One UI 7.0 interface. Covering a wide range of devices from high-end flagship smartphones to popular mid-range models and tablets, this update promises to deliver improved performance, enhanced security, and a refreshed user experience for millions of Samsung users.
