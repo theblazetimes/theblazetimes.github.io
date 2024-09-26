@@ -70,7 +70,7 @@ The Samsung Galaxy S25 Ultra operates on the latest Android operating system, pr
 | **Fast charging** | **Yes, 65 W** |
 | **Colours** | **Phantom Black, Phantom Silver, Phantom Green** |
 
-**Also check**: [Slim and lightweight mobiles](/lightest-phones)
+**Also check**: [Slim and lightweight mobiles](/best-slim-and-lightweight-mobile-phones-of-2024/)
 
 ### **Display**
 
@@ -82,7 +82,7 @@ The Samsung Galaxy S25 Ultra features an impressive 6.8-inch Dynamic AMOLED disp
 | **Touchscreen** | **Yes** |
 | **Protection type** | **Corning Gorilla Glass Victus 3** |
 
-**Also check:** [Display fingerprint scanner phones](/in-display-fingerprint-scanner-phones-under-15000)
+**Also check:** [Display fingerprint scanner phones](/top-display-fingerprint-scanner-phones-of-2024/)
 
 ### **Hardware**
 
@@ -95,7 +95,7 @@ The Samsung Galaxy S25 Ultra is equipped with top-tier hardware, including a cut
 | **RAM** | **12GB / 16GB** |
 | **Internal storage** | **256GB / 512GB / 1TB** |
 
-**Also check**: [Samsung Exynos processor phones](/samsung-exynos-processor-mobile-list-in-india)
+**Also check**: [Samsung Exynos processor phones](/top-samsung-exynos-processor-phones-in-2024/)
 
 ### **Camera**
 
@@ -117,7 +117,7 @@ The Samsung Galaxy S25 Ultra runs on Android 14, enhanced by Samsung's intuitive
 | **Operating system** | **Android 14** |
 | **Skin** | **One UI 6.1** |
 
-**Also check:** [Android 14 mobile phones](/android-14-mobile-phones-mobile-list-in-india)
+**Also check:** [Android 14 mobile phones](/top-android-14-mobile-phones-of-2024/)
 
 ### **Connectivity**
 
