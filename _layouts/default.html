@@ -9,7 +9,7 @@
     <!-- SEO Meta Tags -->
     <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
     <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
-    <meta name="author" content="{{ author.display_name }}">
+    <meta name="author" content="{{ page.author }}">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
