@@ -3,11 +3,13 @@ layout: post
 title: "Full List Of One UI 6.1.1 New Features And Supported Samsung Devices"
 description: "Explore One UI 6.1.1's new AI features like Sketch to Image and Auto Zoom. Check supported Samsung devices including Galaxy S24, Z Fold, and Tab S9."
 author: The Blaze Times
+author_url: "https://gravatar.com/theblazetimes"
+gravatar: "67accb20e06a4954e37ee7c6ea8790e0"
 categories: [ One UI 6, Android 15 ]
-tags: [ Samsung, Galaxy ]
+tags: [ Samsung, Galaxy, One UI 6.1.1, new features, supported devices ]
 image: assets/images/one-ui-611.jpg
+keywords: "One UI 6.1.1 features, Samsung Galaxy S24, One UI supported devices, Android 15 updates, Sketch to Image"
 ---
-
 
 Samsung has started rolling out its latest **One UI 6.1.1** update, packed with a slew of exciting new features powered by AI. Initially available on premium devices like the **Galaxy S24**, **S23**, **S22**, **Z Fold**, **Z Flip**, and **Tab S9** series, the update brings an enhanced user experience across its flagship lineup. However, not all features are available on every device. Let's dive into the complete list of new features and their compatible devices.
 
