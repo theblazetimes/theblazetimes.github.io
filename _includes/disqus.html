@@ -1,13 +1,29 @@
 <section class="disqus">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        var disqus_shortname = '{{site.disqus}}'; 
-        var disqus_developer = 0;
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        // Disqus lazy loading function
+        function loadDisqus() {
+            var disqus_shortname = '{{site.disqus}}'; 
+            var disqus_developer = 0;
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript'; 
+            dsq.async = true;
             dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+        }
+
+        // Intersection Observer setup
+        var disqusObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    loadDisqus();
+                    observer.disconnect(); // Stop observing after loading Disqus
+                }
+            });
+        });
+
+        // Observe the Disqus section
+        disqusObserver.observe(document.getElementById('disqus_thread'));
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
