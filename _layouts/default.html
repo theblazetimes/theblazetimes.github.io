@@ -65,129 +65,135 @@
     <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- JSON-LD Schema Markup -->
+
     <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@context": "https://schema.org",
-        "@graph": [
+        "@type": "NewsMediaOrganization",
+        "@id": "{{ site.url }}/#NewsMediaOrganization",
+        "name": "{{ site.name | default: 'Default Site Name' }}",
+        "url": "{{ site.url | default: 'https://www.example.com' }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.logo | default: 'https://www.example.com/default-logo.jpg' }}",
+          "width": "600",
+          "height": "60"
+        },
+        "sameAs": [
+          "{{ site.facebook | default: 'https://www.facebook.com/default' }}",
+          "{{ site.x | default: 'https://twitter.com/default' }}"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#WebSite",
+        "name": "{{ site.name | default: 'Default WebSite Name' }}",
+        "url": "{{ site.url | default: 'https://www.example.com' }}",
+        "isPartOf": {
+          "@id": "{{ site.url }}/#NewsMediaOrganization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url}}#WebPage",
+        "name": "{{ page.title | default: 'Default Page Title' }}",
+        "url": "{{ site.url }}{{ page.url | default: '/default-url' }}",
+        "description": "{{ page.description | default: 'Default Description' }}",
+        "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+        "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+        "primaryImageOfPage": {
+          "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
+        },
+        "isPartOf": {
+          "@id": "{{ site.url }}/#NewsMediaOrganization"
+        },
+        "inLanguage": "en",
+        "breadcrumb": {
+          "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb",
+        "itemListElement": [
           {
-            "@type": "NewsMediaOrganization",
-            "@id": "{{ site.url }}/#NewsMediaOrganization",
-            "name": "{{ site.name | default: 'Default Site Name' }}",
-            "url": "{{ site.url | default: 'https://www.example.com' }}",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "{{ site.logo | default: 'https://www.example.com/default-logo.jpg' }}",
-              "width": "600",
-              "height": "60"
-            },
-            "sameAs": [
-              "{{ site.facebook | default: 'https://www.facebook.com/default' }}",
-              "{{ site.x | default: 'https://twitter.com/default' }}"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "{{ site.url }}/#WebSite",
-            "name": "{{ site.name | default: 'Default WebSite Name' }}",
-            "url": "{{ site.url | default: 'https://www.example.com' }}",
-            "isPartOf": {
-              "@id": "{{ site.url }}/#NewsMediaOrganization"
-            },
-            "inLanguage": "en"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "{{ site.url }}{{ page.url}}#WebPage",
-            "name": "{{ page.title | default: 'Default Page Title' }}",
-            "url": "{{ site.url }}{{ page.url | default: '/default-url' }}",
-            "description": "{{ page.description | default: 'Default Description' }}",
-            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "primaryImageOfPage": {
-              "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
-            },
-            "isPartOf": {
-              "@id": "{{ site.url }}/#NewsMediaOrganization"
-            },
-            "inLanguage": "en",
-            "breadcrumb": {
-              "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb"
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ site.url }}",
+              "name": "Home"
             }
           },
           {
-            "@type": "BreadcrumbList",
-            "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                  "@id": "{{ site.url }}",
-                  "name": "Home"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                  "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}",
-                  "name": "{{ page.title | default: 'Default Page Title' }}"
-                }
-              }
-            ]
-          },
-          {
-            "@type": "NewsArticle",
-            "keywords": "{{ page.keywords }}",
-            "headline": "{{ page.title | default: 'Default Article Title' }}",
-            "image": {
-              "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
-            },
-            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "author": {
-              "@type": "Person",
-              "name": "{{ page.author | default: 'Anonymous' }}",
-              "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}"
-            },
-            "publisher": {
-              "@id": "{{ site.url }}/#organization"
-            },
-            "inLanguage": "en",
-            "mainEntityOfPage": {
-              "@id": "{{ site.url }}{{ page.url }}#Article"
-            },
-            "url": "{{ site.url }}{{ page.url }}",
-            "description": "{{ page.description | default: 'Default Article Description' }}"
-          },
-          {
-            "@type": "ImageObject",
-            "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
-            "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
-            "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
-            "width": "1980",
-            "height": "1080"
-          },
-          {
-            "@type": "Person",
-            "@id": "{{ site.url }}/#Person",
-            "name": "{{ page.author | default: 'Anonymous' }}",
-            "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}",
-            "image": {
-              "@type": "ImageObject",
-              "caption": "{{ page.author }},
-              "url": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
-              "width": "250",
-              "height": "250"
-            },
-            "jobTitle": "{{ page.author_job_title | default: 'Writer' }}",
-            "worksFor": {
-              "@id": "{{ site.url }}/#NewsMediaOrganization"
-             }
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}",
+              "name": "{{ page.title | default: 'Default Page Title' }}"
+            }
           }
         ]
+      },
+      {
+        "@type": "NewsArticle",
+        "keywords": "{{ page.keywords }}",
+        "headline": "{{ page.title | default: 'Default Article Title' }}",
+        "image": {
+          "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
+        },
+        "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+        "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ page.author | default: 'Anonymous' }}",
+          "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}"
+        },
+        "publisher": {
+          "@id": "{{ site.url }}/#organization"
+        },
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+          "@id": "{{ site.url }}{{ page.url }}#Article"
+        },
+        "url": "{{ site.url }}{{ page.url }}",
+        "description": "{{ page.description | default: 'Default Article Description' }}"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
+        "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
+        "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
+        "width": "1980",
+        "height": "1080"
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#Person",
+        "name": "{{ page.author | default: 'Anonymous' }}",
+        "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ page.author_image | default: 'https://www.example.com/default-author-image.jpg' }}",
+          "width": "300",
+          "height": "300"
+        },
+        "sameAs": [
+          "{{ page.author_facebook | default: 'https://www.facebook.com/default-author' }}",
+          "{{ page.author_twitter | default: 'https://twitter.com/default-author' }}"
+        ],
+        "jobTitle": "{{ page.author_job_title | default: 'Writer' }}",
+        "worksFor": {
+          "@id": "{{ site.url }}/#NewsMediaOrganization"
+        }
       }
-    </script>
+    ]
+  }
+</script>
+
+    
   </head>
   {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
   <body class="{{layout}}">
