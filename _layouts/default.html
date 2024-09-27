@@ -176,13 +176,14 @@
         "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}",
         "image": {
           "@type": "ImageObject",
-          "url": "{{ page.author_image | default: 'https://www.example.com/default-author-image.jpg' }}",
-          "width": "300",
-          "height": "300"
+          "url": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
+          "caption": "{{ page.author }}",
+          "width": "250",
+          "height": "250"
         },
         "sameAs": [
-          "{{ page.author_facebook | default: 'https://www.facebook.com/default-author' }}",
-          "{{ page.author_twitter | default: 'https://twitter.com/default-author' }}"
+          "{{ site.facebook | default: 'https://www.facebook.com/default-author' }}",
+          "{{ site.x | default: 'https://twitter.com/default-author' }}"
         ],
         "jobTitle": "{{ page.author_job_title | default: 'Writer' }}",
         "worksFor": {
