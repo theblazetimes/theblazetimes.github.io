@@ -78,6 +78,7 @@
         "logo": {
           "@type": "ImageObject",
           "url": "{{ site.logo | default: 'https://www.example.com/default-logo.jpg' }}",
+          "contentUrl": "{{ site.logo }}",
           "caption": "{{ site.title }}",
           "width": "261",
           "height": "68"
@@ -166,6 +167,7 @@
         "@type": "ImageObject",
         "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
         "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
+        "contentUrl": "{{ site.url }}{{ page.image }}",
         "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
         "width": "1980",
         "height": "1080"
