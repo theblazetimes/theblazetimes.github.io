@@ -195,6 +195,8 @@
         ]
       }
     </script>
+    <!-- CSS -->
+    <style>*{user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}input,textarea,.selectable{user-select:text;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text}</style>
   </head>
   {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
   <body class="{{layout}}">
@@ -302,6 +304,7 @@
       <!-- End Footer -->
     </div>
     <!-- /.site-content -->
+    <script>document.addEventListener("contextmenu",function(e){e.preventDefault()},!1),document.addEventListener("selectstart",function(e){e.preventDefault()},!1),document.addEventListener("dragstart",function(e){e.preventDefault()},!1),document.addEventListener("keydown",function(e){(e.ctrlKey&&"c"===e.key||e.ctrlKey&&"v"===e.key||e.ctrlKey&&"x"===e.key||e.ctrlKey&&"a"===e.key||e.ctrlKey&&"u"===e.key||e.ctrlKey&&"s"===e.key||e.ctrlKey&&e.shiftKey&&"I"===e.key||"F12"===e.key)&&e.preventDefault()});</script>
     <!-- Scripts -->
     <script src="{{ site.url }}/assets/js/mediumish.js"></script>
     <!-- Popper -->
