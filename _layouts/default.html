@@ -143,9 +143,10 @@
               "@id": "{{ site.url }}/#organization"
             },
             "inLanguage": "en",
-  "mainEntityOfPage": {
-    "@id": "{{ site.url }}{{ page.url }}#Article"
-  },
+            "mainEntityOfPage": {
+              "@id": "{{ site.url }}{{ page.url }}#Article"
+            },
+            "url": "{{ site.url }}{{ page.url }}"
             "description": "{{ page.description | default: 'Default Article Description' }}"
           },
           {
