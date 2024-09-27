@@ -167,6 +167,23 @@
             "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
             "width": "1980",
             "height": "1080"
+          },
+          {
+            "@type": "Person",
+            "@id": "{{ site.url }}/#Person",
+            "name": "{{ page.author | default: 'Anonymous' }}",
+            "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}",
+            "image": {
+              "@type": "ImageObject",
+              "caption": "{{ page.author }},
+              "url": "{{ https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x | default: 'https://www.example.com/default-author-image.jpg' }}",
+              "width": "250",
+              "height": "250"
+            },
+            "jobTitle": "{{ page.author_job_title | default: 'Writer' }}",
+            "worksFor": {
+              "@id": "{{ site.url }}/#NewsMediaOrganization"
+             }
           }
         ]
       }
