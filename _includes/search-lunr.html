@@ -1,4 +1,6 @@
-<script src="{{ site.url }}/assets/js/lunr.js"></script>
+<!-- Move JavaScript to the footer for better loading performance -->
+<script src="{{ site.url }}/assets/js/lunr.js" defer></script>
+<script src="{{ site.url }}/assets/js/lunrsearchengine.js" defer></script>
 
 <style>
     .lunrsearchresult .title {color: #d9230f;}
@@ -9,11 +11,9 @@
 </style>
 
 <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..." aria-label="Search through site content" required />
 </form>
 
 <div id="lunrsearchresults">
     <ul></ul>
 </div>
-
-<script src="{{ site.url }}/assets/js/lunrsearchengine.js"></script>
