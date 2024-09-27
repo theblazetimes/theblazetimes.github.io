@@ -35,9 +35,9 @@
                 {% if post.author %}
                 <span class="meta-footer-thumb">
                 {% if author.avatar %}
-                <img title="{{ author.display_name }} class="author-thumb" src="{{site.url}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                <img title="{{ author.display_name }}" class="author-thumb" src="{{site.url}}/{{ author.avatar }}" alt="{{ author.display_name }}">
                 {% else %}
-                <img title="{{ author.display_name }} class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                <img title="{{ author.display_name }}" class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                 {% endif %}
                 </span>
                 <span class="author-meta">
