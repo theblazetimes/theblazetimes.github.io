@@ -87,9 +87,9 @@
           },
           {
             "@type": "WebSite",
-            "@id": "{{ site.url }}/#WebSite"
+            "@id": "{{ site.url }}/#WebSite",
             "name": "{{ site.name | default: 'Default WebSite Name' }}",
-            "url": "{{ site.url | default: 'https://www.example.com' }}"
+            "url": "{{ site.url | default: 'https://www.example.com' }}",
             "isPartOf": {
               "@id": "{{ site.url }}/#NewsMediaOrganization"
             }
