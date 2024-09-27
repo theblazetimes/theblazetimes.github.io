@@ -97,7 +97,7 @@
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "dateModified": "{{ page.modified_date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "primaryImageOfPage": {
-        "@id": "{{ site.url }}{{ page.image | default: '/default-page-image.jpg' }}#primaryImage"
+        "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#primaryImage"
       },
       "breadcrumb": {
         "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#breadcrumb"
@@ -129,7 +129,7 @@
       "@type": "NewsArticle",
       "headline": "{{ page.title | default: 'Default Article Title' }}",
       "image": {
-        "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
+        "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
       },
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
@@ -147,7 +147,7 @@
       "@type": "ImageObject",
       "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
       "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
-      "contentUrl": "{{ page.image }}",
+      "contentUrl": "{{site.url}}/{{ page.image }}",
       "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
       "width": "1980",
       "height": "1080"
