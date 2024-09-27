@@ -95,7 +95,7 @@
             "url": "{{ site.url }}",
             "name": "{{ site.name }}",
             "publisher": {
-              "@id": "{{ site.url }}/#Organization"
+              "@id": "{{ site.url }}/#NewsMediaOrganization"
           },
           {
             "@type": "WebPage",
@@ -165,6 +165,7 @@
             "@type": "ImageObject",
             "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
             "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
+            "contentUrl": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
             "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
             "width": "1980",
             "height": "1080"
