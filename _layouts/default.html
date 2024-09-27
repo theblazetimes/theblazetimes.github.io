@@ -127,7 +127,7 @@
           },
           {
             "@type": "NewsArticle",
-            "keywords": {{ page.keywords }}
+            "keywords": "{{ page.keywords }}"
             "headline": "{{ page.title | default: 'Default Article Title' }}",
             "image": {
               "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
@@ -142,7 +142,7 @@
             "publisher": {
               "@id": "{{ site.url }}/#organization"
             },
-            "inLanguage": "en-US",
+            "inLanguage": "en",
             "mainEntityOfPage": {
               "@id" "{{ site.url }}{{ page.url }}#WebPage
             },
