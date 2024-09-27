@@ -193,6 +193,13 @@
           <h1 class="sitetitle">{{ site.name }}</h1>
           <p class="lead">{{ site.description }}</p>
         </div>
+	      <!-- Serach Bar -->
+	      <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for articles...">
+            <button id="search-button">Search</button>
+        </div>
+	      <script>function performSearch(){const query=document.getElementById('search-bar').value;if(query){window.location.href=`https://www.google.com/search?q=site%3Awww.theblazetimes.in+${encodeURIComponent(query)}`}}document.getElementById('search-button').addEventListener('click',performSearch);document.getElementById('search-bar').addEventListener('keypress',function(event){if(event.key==='Enter'){performSearch()}});</script>
+	      <style>.search-container{display:flex;justify-content:center;align-items:center;width:100%}#search-bar{flex:1;height:30px;border:1px solid #dcdcdc;border-radius:5px;padding:0 20px;transition:border .3s}#search-bar:focus{border:1px solid #4285f4;outline:none}#search-button{height:30px;margin-left:10px;border:none;background-color:#4285f4;color:white;border-radius:5px;cursor:pointer;padding:0 20px;transition:background-color .3s}#search-button:hover{background-color:#357ae8}</style>
         <!-- Content -->
         <div class="main-content">
           {{ content }}
