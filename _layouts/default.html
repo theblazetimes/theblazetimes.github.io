@@ -97,15 +97,15 @@
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "dateModified": "{{ page.modified_date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "primaryImageOfPage": {
-        "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#primaryImage"
+        "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
       },
       "breadcrumb": {
-        "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#breadcrumb"
+        "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#breadcrumb",
+      "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -142,12 +142,13 @@
         "@id": "{{ site.url }}/#organization"
       },
       "description": "{{ page.description | default: 'Default Article Description' }}"
+      "url": "{{ site.url }}{{ page.url }}"
+      "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
     },
     {
       "@type": "ImageObject",
       "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
       "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
-      "contentUrl": "{{site.url}}/{{ page.image }}",
       "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
       "width": "1980",
       "height": "1080"
