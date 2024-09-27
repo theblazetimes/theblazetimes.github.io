@@ -190,13 +190,11 @@
       }
     </script>
     <!-- Schema.org Microdata -->
-    <meta itemscope itemtype="https://schema.org/Article">
-    <meta itemprop="headline" content="{{ page.title }}">
-    <meta itemprop="description" content="{{ page.description }}">
-    <meta itemprop="image" content="{{ site.url }}/{{ page.image }}">
-    <meta itemprop="author" content="{{ page.author }}">
-    <meta itemprop="publisher" content="{{ site.name }}">
     <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/Article" itemid="{{ site.url }}{{ page.url }}">
+    <meta itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <meta itemprop="name" content="{{ page.author }}">
+    <meta itemprop="headline" content="{{ page.title }}">
+    <meta itemprop="image" content="{{ site.url }}/{{ page.image }}">
   </head>
   {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
   <body class="{{layout}}">
