@@ -182,8 +182,8 @@
           "height": "250"
         },
         "sameAs": [
-          "{{ site.facebook | default: 'https://www.facebook.com/default-author' }}",
-          "{{ site.x | default: 'https://twitter.com/default-author' }}"
+          "https://www.facebook.com/{{ site.facebook }}",
+          "https://twitter.com/{{ site.x }}"
         ],
         "jobTitle": "{{ page.author_job_title | default: 'Writer' }}",
         "worksFor": {
