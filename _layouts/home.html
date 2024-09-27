@@ -64,13 +64,13 @@
     <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- JSON-LD Schema Markup for Home Page -->
-    <script type="application/ld+json" class="rank-math-schema-pro">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": ["NewsMediaOrganization", "Organization"],
-            "@id": "{{ site.url }}/#organization",
+            "@type": "NewsMediaOrganization",
+            "@id": "{{ site.url }}/#NewsMediaOrganization",
             "name": "{{ site.name }}",
             "url": "{{ site.url }}",
             "sameAs": [
@@ -83,20 +83,20 @@
               "url": "{{ site.logo }}",
               "contentUrl": "{{ site.logo }}",
               "caption": "{{ site.title }}",
-              "inLanguage": "en-US",
+              "inLanguage": "en",
               "width": "261",
               "height": "68"
             }
           },
           {
             "@type": "WebSite",
-            "@id": "{{ site.url }}/#website",
+            "@id": "{{ site.url }}/#WebSite",
             "url": "{{ site.url }}",
             "name": "{{ site.name }}",
             "publisher": {
-              "@id": "{{ site.url }}/#organization"
+              "@id": "{{ site.url }}/#NewsMediaOrganization"
             },
-            "inLanguage": "en-US",
+            "inLanguage": "en",
             "potentialAction": {
               "@type": "SearchAction",
               "target": "{{ site.url }}?s={search_term_string}",
@@ -105,19 +105,19 @@
           },
           {
             "@type": "WebPage",
-            "@id": "{{ site.url }}/#webpage",
+            "@id": "{{ site.url }}/#WebPage",
             "url": "{{ site.url }}",
             "name": "{{ site.name }}",
             "description": "{{ site.description }}",
             "datePublished": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S' }}",
             "inLanguage": "en-US",
             "isPartOf": {
-              "@id": "{{ site.url }}/#website"
+              "@id": "{{ site.url }}/#WebSite"
             }
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "{{ site.url }}/#breadcrumb",
+            "@id": "{{ site.url }}/#Breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -132,9 +132,10 @@
           },
           {
             "@type": "ImageObject",
-            "@id": "{{ site.url }}/#image",
+            "@id": "{{ site.url }}/#Image",
             "url": "{{ site.image }}",
             "contentUrl": "{{ site.image }}",
+            "caption": {{ site.title }}
             "description": "A representative image of {{ site.name }}",
             "width": "1980",
             "height": "1080"
