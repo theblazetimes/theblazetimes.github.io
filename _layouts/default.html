@@ -71,15 +71,12 @@
         "@graph": [
           {
             "@type": "NewsMediaOrganization",
-            "@id": "{{ site.url }}/#NewsMediaOrganization",
             "name": "{{ site.name | default: 'Default Site Name' }}",
             "url": "{{ site.url | default: 'https://www.example.com' }}",
             "logo": {
               "@type": "ImageObject",
               "@id": "{{ site.logo }}#logo",
               "caption": "{{ site.title }}",
-              "contentUrl": "{{ site.logo }}",
-              "inLanguage": "en",
               "url": "{{ site.logo | default: 'https://www.example.com/default-logo.jpg' }}",
               "width": "261",
               "height": "68"
