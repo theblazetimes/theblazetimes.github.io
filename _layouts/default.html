@@ -97,14 +97,19 @@
           },
           {
             "@type": "WebPage",
+            "@id": "{{ site.url }}{{ page.url}}#WebPage",
             "name": "{{ page.title | default: 'Default Page Title' }}",
             "url": "{{ site.url }}{{ page.url | default: '/default-url' }}",
             "description": "{{ page.description | default: 'Default Description' }}",
             "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "dateModified": "{{ page.modified_date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
             "primaryImageOfPage": {
               "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
             },
+            "isPartOf": {
+              "@id": "{{ site.url }}/#NewsMediaOrganization"
+            },
+            "inLanguage": "en",
             "breadcrumb": {
               "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb"
             }
