@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <meta content='width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes' name='viewport' />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/Article" itemid="{{ site.url }}{{ page.url }}">
     <!-- SEO Meta Tags -->
     <meta name="description" content="{{ page.description | truncate: 150 }}">
     <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
@@ -128,7 +127,7 @@
           {
             "@type": "NewsArticle",
             "headline": "{{ page.title | default: 'Default Article Title' }}",
-             "url": "{{ site.url }}{{ page.url }}"
+             "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
             "image": {
               "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
             },
