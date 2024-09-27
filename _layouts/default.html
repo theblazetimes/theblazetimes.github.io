@@ -129,7 +129,7 @@
       "@type": "NewsArticle",
       "headline": "{{ page.title | default: 'Default Article Title' }}",
       "image": {
-        "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#primaryImage"
+        "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
       },
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
@@ -145,7 +145,7 @@
     },
     {
       "@type": "ImageObject",
-      "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#image",
+      "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#Image",
       "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
       "contentUrl": "{{ page.image }}",
       "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
