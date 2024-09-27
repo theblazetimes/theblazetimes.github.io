@@ -81,7 +81,7 @@
       },
       "sameAs": [
         "{{ site.facebook | default: 'https://www.facebook.com/default' }}",
-        "{{ site.twitter | default: 'https://twitter.com/default' }}"
+        "{{ site.x | default: 'https://twitter.com/default' }}"
       ]
     },
     {
@@ -131,8 +131,8 @@
       "image": {
         "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#primaryImage"
       },
-      "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' | default: '2020-01-01T00:00:00' }}",
-      "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S' | default: '2020-01-01T00:00:00' }}",
+      "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+      "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
       "author": {
         "@type": "Person",
         "name": "{{ page.author | default: 'Anonymous' }}",
@@ -147,6 +147,8 @@
       "@type": "ImageObject",
       "@id": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}#primaryImage",
       "url": "{{ site.url }}{{ page.image | default: '/default-article-image.jpg' }}",
+      "contentUrl": "{{ page.image }}",
+      "description": "A representative image of {{ page.title }}"
       "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
       "width": "1980",
       "height": "1080"
