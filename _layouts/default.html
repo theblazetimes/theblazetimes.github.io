@@ -191,10 +191,7 @@
     </script>
     <!-- Schema.org Microdata -->
     <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/Article" itemid="{{ site.url }}{{ page.url }}">
-    <meta itemprop="author" itemscope itemtype="https://schema.org/Person">
-    <meta itemprop="name" content="{{ page.author }}">
-    <meta itemprop="headline" content="{{ page.title }}">
-    <meta itemprop="image" content="{{ site.url }}/{{ page.image }}">
+    <meta itemprop="author" itemscope itemType="https://schema.org/Person" itemid="{{ page.author }}">
   </head>
   {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
   <body class="{{layout}}">
