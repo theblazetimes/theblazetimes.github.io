@@ -70,8 +70,8 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "NewsMediaOrganization",
-            "@id": "{{ site.url }}/#NewsMediaOrganization",
+            "@type": "Organization",
+            "@id": "{{ site.url }}/#Organization",
             "name": "{{ site.name | default: 'Default Site Name' }}",
             "url": "{{ site.url | default: 'https://www.example.com' }}",
             "logo": {
@@ -93,7 +93,7 @@
             "name": "{{ site.name | default: 'Default WebSite Name' }}",
             "url": "{{ site.url | default: 'https://www.example.com' }}",
             "isPartOf": {
-              "@id": "{{ site.url }}/#NewsMediaOrganization"
+              "@id": "{{ site.url }}/#Organization"
             },
             "inLanguage": "en"
           },
@@ -109,7 +109,7 @@
               "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
             },
             "isPartOf": {
-              "@id": "{{ site.url }}/#NewsMediaOrganization"
+              "@id": "{{ site.url }}/#Organization"
             },
             "inLanguage": "en",
             "breadcrumb": {
@@ -153,7 +153,7 @@
               "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}"
             },
             "publisher": {
-              "@id": "{{ site.url }}/#organization"
+              "@id": "{{ site.url }}/#Organization"
             },
             "inLanguage": "en",
             "mainEntityOfPage": {
@@ -189,7 +189,7 @@
             ],
             "jobTitle": "{{ page.author_job_title | default: 'Writer' }}",
             "worksFor": {
-              "@id": "{{ site.url }}/#NewsMediaOrganization"
+              "@id": "{{ site.url }}/#Organization"
             }
           }
         ]
