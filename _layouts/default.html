@@ -109,7 +109,7 @@
               "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
             },
             "isPartOf": {
-              "@id": "{{ site.url }}/#Organization"
+              "@id": "{{ site.url }}/#WebSite"
             },
             "inLanguage": "en",
             "breadcrumb": {
@@ -154,6 +154,9 @@
             },
             "publisher": {
               "@id": "{{ site.url }}/#Organization"
+            },
+            "isPartOf": {
+               "@id": "{{ site.url }}{{ page.url }}#WebPage"
             },
             "inLanguage": "en",
             "mainEntityOfPage": {
