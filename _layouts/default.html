@@ -143,7 +143,7 @@
             "keywords": "{{ page.keywords }}",
             "headline": "{{ page.title | default: 'Default Article Title' }}",
             "image": {
-              "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#NewsArticleImage"
+              "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#ImageObject"
             },
             "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
             "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
@@ -160,7 +160,7 @@
             },
             "inLanguage": "en",
             "mainEntityOfPage": {
-              "@id": "{{ site.url }}{{ page.url }}#Article"
+              "@id": "{{ site.url }}{{ page.url }}#WebPage"
             },
             "url": "{{ site.url }}{{ page.url }}",
             "description": "{{ page.description | default: 'Default Article Description' }}"
