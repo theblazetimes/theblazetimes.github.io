@@ -74,6 +74,9 @@
               "width": "261",
               "height": "68"
             },
+            "legalName": "{{ site.legal_name | default: 'Default Legal Name' }}",
+            "alternateName": "{{ site.alternate_name | default: 'Default Alternate Name' }}",
+            "foundingDate": "{{ site.founding_date | default: '2020-01-01' }}",
             "sameAs": [
               "https://www.facebook.com/{{ site.facebook }}",
               "https://twitter.com/{{ site.x }}"
@@ -84,8 +87,20 @@
             "@id": "{{ site.url }}/#WebSite",
             "name": "{{ site.name | default: 'Default WebSite Name' }}",
             "url": "{{ site.url | default: 'https://www.example.com' }}",
+            "copyrightHolder": {
+              "@type": "Organization",
+              "@id": "{{ site.url }}/#Organization",
+              "name": "{{ site.title }}",
+              "url": "{{ site.url }}"
+            },
             "publisher": {
-              "@id": "{{ site.url }}/#Organization"
+              "@type": "Organization",
+              "name": "{{ site.name | default: 'Default Publisher Name' }}",
+              "@id": "{{ site.url }}/#Organization",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.url }}/logo.png"
+              }
             },
             "inLanguage": "en"
           },
@@ -101,9 +116,22 @@
               "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
             },
             "isPartOf": {
-              "@id": "{{ site.url }}/#WebSite"
+              "@type": "WebSite",
+              "@id": "{{ site.url }}/#WebSite",
+              "name": "{{ site.name | default: 'Default WebSite Name' }}",
+              "url": "{{ site.url }}"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "{{ site.name | default: 'Default Publisher Name' }}",
+              "@id": "{{ site.url }}/#Organization",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.url }}/logo.png"
+              }
             },
             "inLanguage": "en",
+            "wordCount": "{{ page.content | split: ' ' | size }}",
             "breadcrumb": {
               "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb"
             }
@@ -137,13 +165,13 @@
             "url": "{{ site.url }}{{ page.url }}",
             "thumbnailUrl": "{{ site.url }}/{{ page.image }}",
             "copyrightYear": "{{ site.time | date: '%Y' }}",
+            "wordCount": "{{ page.content | split: ' ' | size }}",
             "copyrightHolder": {
               "@type": "Organization",
               "@id": "{{ site.url }}/#Organization",
               "name": "{{ site.title }}",
               "url": "{{ site.url }}"
             },
-            "keywords": "{{ page.keywords }}",
             "headline": "{{ page.title | default: 'Default Article Title' }}",
             "image": {
               "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#ImageObject"
@@ -156,10 +184,19 @@
               "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}"
             },
             "publisher": {
-              "@id": "{{ site.url }}/#Organization"
-            },
+              "@type": "Organization",
+              "name": "{{ site.name | default: 'Default Publisher Name' }}",
+              "@id": "{{ site.url }}/#Organization",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.url }}/logo.png"
+              }
+            }, 
             "isPartOf": {
-               "@id": "{{ site.url }}{{ page.url }}#WebPage"
+              "@type": "WebPage",
+              "@id": "{{ site.url }}/#WebPage",
+              "name": "{{ site.name | default: 'Default WebSite Name' }}",
+              "url": "{{ site.url }}"
             },
             "inLanguage": "en",
             "description": "{{ page.description | default: 'Default Article Description' }}"
