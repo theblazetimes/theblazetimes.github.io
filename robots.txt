@@ -1,9 +1,0 @@
-User-agent: *
-
-Sitemap: https://www.theblazetimes.in/sitemap.xml
-
-Sitemap: https://dev.theblazetimes.in/sitemap.xml
-
-Sitemap: https://edu.theblazetimes.in/sitemap.xml
-
-Sitemap: https://learn.theblazetimes.in/sitemap.xml
