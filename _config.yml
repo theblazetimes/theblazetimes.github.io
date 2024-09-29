@@ -6,7 +6,6 @@ keywords: "latest news updates, political news, technology news, current affairs
 logo: 'https://www.theblazetimes.in/logo.png'
 image: "https://www.theblazetimes.in/the-blaze-times.jpeg"
 favicon: 'favicon.ico'
-google_analytics: 'G-J47BDWDNY1'
 disqus: 'the-blaze-times'
 mailchimp-list: 'https://theblazetimes.us9.list-manage.com/subscribe/post?u=93fe5eb8eeceed33701ba0e8f&amp;id=ae9e5d4588&amp;f_id=00c6c2e1f0'
 include: ["_pages"]
@@ -72,6 +71,10 @@ kramdown:
 adsense: "enabled"
 adsense-data-ad-client: "ca-pub-4994341766136391"
 adsense-data-ad-slot: "3578670127"
+
+# Analytics (change to "enabled" to activate, enter your GA ID.)
+analytics: "enabled"
+google_analytics: "G-J47BDWDNY1"
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
