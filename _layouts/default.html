@@ -133,6 +133,17 @@
           },
           {
             "@type": "NewsArticle",
+            "@id": "{{ site.url }}{{ page.url }}#Article",
+            "mainEntityOfPage": "{{ site.url }}{{ page.url }}#WebPage",
+            "url": "{{ site.url }}{{ page.url }}",
+            "thumbnailUrl": "{{ site.url }}/{{ page.image }}",
+            "copyrightYear": "{{ site.time | date: '%Y' }}",
+            "copyrightHolder": {
+              "@type": "Organization",
+              "@id": "{{ site.url }}/#Organization",
+              "name": "{{ site.title }}",
+              "url": "{{ site.url }}"
+            },
             "keywords": "{{ page.keywords }}",
             "headline": "{{ page.title | default: 'Default Article Title' }}",
             "image": {
