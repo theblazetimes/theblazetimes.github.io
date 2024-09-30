@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>{{ page.title }}</title>
     <!-- Meta -->
     <meta charset="UTF-8" />
@@ -68,7 +68,7 @@
     </script>
     <!-- WebPage Schema Meta Tag -->
     <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ site.url }}{{ page.url }}"/>
-</head>
+  </head>
   {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
   <body class="{{layout}}">
     <!-- Defer loading of font and font awesome -->
