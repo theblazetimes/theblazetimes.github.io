@@ -40,6 +40,6 @@ Details about the Galaxy A16 4G are still scarce, but it's expected to be a slig
 
 ## Final Thoughts
 
-The Galaxy A16 series seems poised to make a splash in the mid-range market, particularly with its competitive pricing, sleek design, and exceptional software support. While the A16 5G is shaping up to be a strong contender with its impressive display and performance, the 4G variant will likely cater to those seeking a more affordable option without the need for 5G connectivity.
+The Galaxy A16 series seems poised to make a splash in the mid-range market, particularly with its competitive pricing, sleek design, and exceptional software support. While the A16 5G is shaping up to be a strong contender with its impressive display and performance, the 4G variant will likely cater to those seeking a more affordable option without the need for [5G connectivity](https://www.theblazetimes.in/top-samsung-5g-mobile-phones-in-india-for-2024/).
 
 With both models leaking in full ahead of the official launch, Samsung fans and budget-conscious buyers alike will be eagerly awaiting the company's formal announcement.
