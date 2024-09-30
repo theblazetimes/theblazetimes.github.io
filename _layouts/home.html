@@ -58,91 +58,91 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- JSON-LD Schema Markup for Home Page -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "{{ site.url }}/#Organization",
-      "name": "{{ site.name | default: 'The Blaze Times' }}",
-      "url": "{{ site.url | default: 'https://www.theblazetimes.in' }}",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ site.logo | default: 'https://www.theblazetimes.in/default-logo.jpg' }}",
-        "contentUrl": "{{ site.logo }}",
-        "caption": "{{ site.title }}",
-        "width": "261",
-        "height": "68"
-      },
-      "legalName": "{{ site.legal_name | default: 'The Blaze Times, Inc.' }}",
-      "alternateName": "{{ site.alternate_name | default: 'Blaze Times' }}",
-      "foundingDate": "{{ site.founding_date | default: '2020-01-01' }}",
-      "sameAs": [
-        "https://www.facebook.com/{{ site.facebook }}",
-        "https://twitter.com/{{ site.x }}"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "{{ site.url }}/#WebSite",
-      "name": "{{ site.name | default: 'The Blaze Times' }}",
-      "url": "{{ site.url | default: 'https://www.theblazetimes.in' }}",
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ site.name | default: 'The Blaze Times' }}",
-        "@id": "{{ site.url }}/#Organization",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ site.logo | default: 'https://www.theblazetimes.in/default-logo.jpg' }}"
-        }
-      },
-      "inLanguage": "en"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "{{ site.url }}/#WebPage",
-      "name": "{{ site.title }}",
-      "url": "{{ site.url }}",
-      "description": "{{ site.description | default: 'Get the latest breaking news and insightful analysis with The Blaze Times. Stay updated on politics, culture, and more.' }}",
-      "datePublished": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S+05:30' }}",
-      "dateModified": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S+05:30' }}",
-      "isPartOf": {
-        "@type": "WebSite",
-        "@id": "{{ site.url }}/#WebSite",
-        "name": "{{ site.name | default: 'The Blaze Times' }}",
-        "url": "{{ site.url }}"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ site.name | default: 'The Blaze Times' }}",
-        "@id": "{{ site.url }}/#Organization",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ site.logo | default: 'https://www.theblazetimes.in/default-logo.jpg' }}"
-        }
-      },
-      "inLanguage": "en",
-      "breadcrumb": {
-        "@id": "{{ site.url }}/#Breadcrumb"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "{{ site.url }}/#Breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@id": "{{ site.url }}",
-            "name": "Home"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "{{ site.url }}/#Organization",
+            "name": "{{ site.name | default: 'The Blaze Times' }}",
+            "url": "{{ site.url | default: 'https://www.theblazetimes.in' }}",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "{{ site.logo | default: 'https://www.theblazetimes.in/default-logo.jpg' }}",
+              "contentUrl": "{{ site.logo }}",
+              "caption": "{{ site.title }}",
+              "width": "261",
+              "height": "68"
+            },
+            "legalName": "{{ site.legal_name | default: 'The Blaze Times, Inc.' }}",
+            "alternateName": "{{ site.alternate_name | default: 'Blaze Times' }}",
+            "foundingDate": "{{ site.founding_date | default: '2020-01-01' }}",
+            "sameAs": [
+              "https://www.facebook.com/{{ site.facebook }}",
+              "https://twitter.com/{{ site.x }}"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "{{ site.url }}/#WebSite",
+            "name": "{{ site.name | default: 'The Blaze Times' }}",
+            "url": "{{ site.url | default: 'https://www.theblazetimes.in' }}",
+            "publisher": {
+              "@type": "Organization",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
+              "@id": "{{ site.url }}/#Organization",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.logo | default: 'https://www.theblazetimes.in/default-logo.jpg' }}"
+              }
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "{{ site.url }}/#WebPage",
+            "name": "{{ site.title }}",
+            "url": "{{ site.url }}",
+            "description": "{{ site.description | default: 'Get the latest breaking news and insightful analysis with The Blaze Times. Stay updated on politics, culture, and more.' }}",
+            "datePublished": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S+05:30' }}",
+            "dateModified": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S+05:30' }}",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "{{ site.url }}/#WebSite",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
+              "url": "{{ site.url }}"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
+              "@id": "{{ site.url }}/#Organization",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.logo | default: 'https://www.theblazetimes.in/default-logo.jpg' }}"
+              }
+            },
+            "inLanguage": "en",
+            "breadcrumb": {
+              "@id": "{{ site.url }}/#Breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "{{ site.url }}/#Breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@id": "{{ site.url }}",
+                  "name": "Home"
+                }
+              }
+            ]
           }
-        }
-      ]
-    }
-  ]
-}
-</script>
+        ]
+      }
+    </script>
   </head>
   {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
   <body class="{{layout}}">
@@ -259,15 +259,5 @@
     {% if page.layout == 'post' %}
     <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
     {% endif %}
-    <!-- PushAlert Onsite Messaging -->
-<script type="text/javascript">
-    (function(d, t) {
-        var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-        g.src = "https://cdn.inwebr.com/inwebr_39985683b5e2f3215bf30d702b5bf2f1.js";
-        s.parentNode.insertBefore(g, s);
-    }(document, "script"));
-</script>
-<!-- End PushAlert Onsite Messaging -->
   </body>
 </html>
