@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <title>{{ site.title }}</title>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "99318aac-1a9b-4a43-8ca0-4c994c2d2b72",
+    });
+  });
+</script>
     <!-- Meta -->
     <meta charset="UTF-8" />
     <meta content='width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes' name='viewport' />
