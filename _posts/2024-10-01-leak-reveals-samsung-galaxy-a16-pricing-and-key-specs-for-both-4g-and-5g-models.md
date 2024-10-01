@@ -14,7 +14,7 @@ date: 2024-10-01T15:58:17+05:30
 
 In a flurry of leaks, we’ve now received details on not only the color options for the upcoming Samsung Galaxy A16, but also one of the most crucial aspects for prospective buyers: the pricing. A European retailer's internal database has revealed that the Galaxy A16 4G will retail for **€209.90**, while the Galaxy A16 5G will be priced at **€239.90**. These prices are for models with **128GB of storage**, but details regarding the amount of RAM were notably absent from the leak.
 
-![Samsung Galaxy A16 Price Leak](assets/images/samsung-galaxy-a16-price-leak.jpg "Samsung Galaxy A16 Price Leak")
+![Samsung Galaxy A16 Price Leak]( https://www.theblazetimes.in/assets/images/samsung-galaxy-a16-price-leak.jpg "Samsung Galaxy A16 Price Leak")
 
 *Samsung Galaxy A16 Price Leak*
 
