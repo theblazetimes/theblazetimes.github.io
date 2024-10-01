@@ -55,11 +55,11 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
-    
+
 # Other
 markdown: kramdown
 
@@ -70,10 +70,11 @@ kramdown:
     block:
       line_numbers: true
 
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+# Adsense (enable auto ads)
 adsense: "enabled"
 adsense-data-ad-client: "ca-pub-4994341766136391"
 adsense-data-ad-slot: "3578670127"
+auto_ads: true  # Enable auto ads
 
 # Analytics (change to "enabled" to activate, enter your GA ID.)
 analytics: "enabled"
