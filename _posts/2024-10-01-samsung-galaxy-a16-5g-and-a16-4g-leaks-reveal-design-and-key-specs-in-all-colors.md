@@ -18,21 +18,11 @@ Samsung's highly anticipated Galaxy A16 series continues to garner attention ahe
 
 According to the new renders, the Galaxy A16 5G will be available in three elegant colors: Black, Blue, and Mint Green. While the 4G model will sport the same colors, there are slight differences in the tones, making them distinct yet cohesive with the overall lineup.
 
-<!-- Adsense if enabled -->
-      {% if site.adsense == "enabled" %}
-      {% include adsense-under-header.html %}
-      {% endif %}
-
 The design of both phones remains sleek and minimalist, featuring a flat back with a multi-camera setup. The color choices are subtle but trendy, making the devices appealing for those who value style in their smartphones.
 
 ## Galaxy A16 5G: Key Specifications
 
 The Galaxy A16 5G is rumored to come with some solid mid-range specs that could make it a competitive choice in its price range. These include:
-
-<!-- Adsense if enabled -->
-      {% if site.adsense == "enabled" %}
-      {% include adsense-under-header.html %}
-      {% endif %}
 
 - **Display:** A 6.7-inch LCD screen with a Full HD+ resolution (1080x2340), 90 Hz refresh rate, and 800-nit peak brightness.
 - **Performance:** The A16 5G will be powered by two different chipsets, depending on the region. In India and Thailand, it will feature MediaTek's **Dimensity 6300 SoC**, while Samsung's own **Exynos 1330** will be used in other markets.
@@ -45,11 +35,6 @@ The Galaxy A16 5G is rumored to come with some solid mid-range specs that could 
 One of the most compelling features of the Galaxy A16 5G is its extended software support. Samsung has committed to providing **six major Android updates** along with **six years of security patches**. This is a huge advantage for a mid-range device, especially in a segment where prolonged software support is often lacking. This could give Samsung a significant edge over its competition, particularly for users who value long-term reliability.
 
 ## Galaxy A16 4G: What We Know
-
-<!-- Adsense if enabled -->
-      {% if site.adsense == "enabled" %}
-      {% include adsense-under-header.html %}
-      {% endif %}
 
 Details about the Galaxy A16 4G are still scarce, but it's expected to be a slightly toned-down version of the 5G variant. While official specs haven't been fully revealed yet, it's likely that it will come with a smaller or less powerful chipset compared to its 5G sibling. The design and color choices appear to remain consistent across both models, though with subtle variations in hue.
 
