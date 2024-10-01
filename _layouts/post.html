@@ -4,22 +4,17 @@ disqus: false
 archive: false
 post_class: post-template
 ---
-
 <!-- Begin Article -->
 <div class="container">
   <div class="row">
-    
     <!-- Post Share -->
     <div class="col-md-2 pl-0">
       {% include share.html %}
     </div>
-    
     <!-- Post -->
     {% assign author = site.authors[page.author] %}
-    
     <div class="col-md-9 flex-first flex-md-unordered">
       <div class="mainheading">
-        
         <!-- Author Box -->
         {% if page.author %}
         <div class="row post-top-meta">
@@ -37,16 +32,13 @@ post_class: post-template
           </div>
         </div>
         {% endif %}
-
         <!-- Post Title -->
         <h1 class="posttitle">{{ page.title }}</h1>
       </div>
-
       <!-- Adsense if enabled -->
       {% if site.adsense == "enabled" %}
       {% include adsense-under-header.html %}
       {% endif %}
-      
       <!-- Post Featured Image -->
       {% if page.image %}
       {% if site.lazyimages == "enabled" %}
@@ -60,7 +52,6 @@ post_class: post-template
         alt="{{ page.title }}" title="{{ page.title }}" />
       {% endif %}
       {% endif %}
-      
       <!-- Post Content -->
       <div class="article-post">
         {% if page.toc %}
@@ -74,7 +65,6 @@ post_class: post-template
         {% endif %}
         {{ content }}
       </div>
-      
       <!-- Rating -->
       {% if page.rating %}
       <div class="rating mb-4 d-flex align-items-center">
@@ -82,19 +72,17 @@ post_class: post-template
         {% include star_rating.html %}
       </div>
       {% endif %}
-      
       <!-- Post Date -->
       <p>
         <small>
-          <span class="post-date">
-            <time class="post-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-          </span>
-          {% if page.last_modified_at %}
-          (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: '%b %-d, %Y' }}</time>)
-          {% endif %}
+        <span class="post-date">
+        <time class="post-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
+        </span>
+        {% if page.last_modified_at %}
+        (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: '%b %-d, %Y' }}</time>)
+        {% endif %}
         </small>
       </p>
-      
       <!-- Post Categories -->
       <div class="after-post-cats">
         <ul class="tags mb-4">
@@ -104,7 +92,6 @@ post_class: post-template
           {% endfor %}
         </ul>
       </div>
-      
       <!-- Post Tags -->
       <div class="after-post-tags">
         <ul class="tags">
@@ -114,7 +101,6 @@ post_class: post-template
           {% endfor %}
         </ul>
       </div>
-      
       <!-- Prev/Next -->
       <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
         {% if page.previous.url %}
@@ -125,14 +111,11 @@ post_class: post-template
         {% endif %}
         <div class="clearfix"></div>
       </div>
-    
     </div>
     <!-- End Post -->
-
   </div>
 </div>
 <!-- End Article -->
-
 <!-- Begin Comments -->
 {% if page.comments != false %}
 <div class="container">
@@ -144,7 +127,6 @@ post_class: post-template
 </div>
 {% endif %}
 <!-- End Comments -->
-
 <!-- Review with LD-JSON -->
 {% if page.rating %}
 <script type="application/ld+json">
