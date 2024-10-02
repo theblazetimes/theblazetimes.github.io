@@ -16,10 +16,6 @@ Samsung has officially announced the list of devices set to receive the Android 
 #### **Eligible Samsung Devices for Android 15 and One UI 7.0**
 The following devices have been confirmed by Samsung to receive the highly anticipated Android 15 update with One UI 7.0:
 
-      {% if site.adsense == "enabled" %}
-      {% include adsense-under-header.html %}
-      {% endif %}
-
 ##### **Galaxy S Series**
 Samsung’s premium Galaxy S series will lead the way in receiving the update, starting with the latest flagship models:
 - Galaxy S24, S24+, S24 Ultra
