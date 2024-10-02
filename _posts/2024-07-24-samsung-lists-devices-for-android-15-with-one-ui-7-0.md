@@ -16,7 +16,6 @@ Samsung has officially announced the list of devices set to receive the Android 
 #### **Eligible Samsung Devices for Android 15 and One UI 7.0**
 The following devices have been confirmed by Samsung to receive the highly anticipated Android 15 update with One UI 7.0:
 
-<!-- Adsense if enabled -->
       {% if site.adsense == "enabled" %}
       {% include adsense-under-header.html %}
       {% endif %}
