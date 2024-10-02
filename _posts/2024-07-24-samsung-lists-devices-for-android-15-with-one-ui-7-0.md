@@ -16,6 +16,11 @@ Samsung has officially announced the list of devices set to receive the Android 
 #### **Eligible Samsung Devices for Android 15 and One UI 7.0**
 The following devices have been confirmed by Samsung to receive the highly anticipated Android 15 update with One UI 7.0:
 
+<!-- Adsense if enabled -->
+      {% if site.adsense == "enabled" %}
+      {% include adsense-under-header.html %}
+      {% endif %}
+
 ##### **Galaxy S Series**
 Samsung’s premium Galaxy S series will lead the way in receiving the update, starting with the latest flagship models:
 - Galaxy S24, S24+, S24 Ultra
@@ -28,6 +33,11 @@ Samsung’s foldable lineup is also on the list, offering users of these cutting
 - Galaxy Z Fold 5, Z Flip 5
 - Galaxy Z Fold 4, Z Flip 4
 - Galaxy Z Fold 3, Z Flip 3
+
+<!-- Adsense if enabled -->
+      {% if site.adsense == "enabled" %}
+      {% include adsense-under-header.html %}
+      {% endif %}
 
 ##### **Galaxy A Series**
 Mid-range users are not left behind, with several popular Galaxy A series devices included in the update:
@@ -47,6 +57,11 @@ Tablet users can also look forward to new features and improvements, with the fo
 #### **Key Features of Android 15 with One UI 7.0**
 Android 15 paired with One UI 7.0 introduces a slew of new features, making your device faster, smarter, and more personalized than ever. Here’s what users can expect:
 
+<!-- Adsense if enabled -->
+      {% if site.adsense == "enabled" %}
+      {% include adsense-under-header.html %}
+      {% endif %}
+
 - **Enhanced Performance:** Significant optimizations under the hood will improve device speed, boost battery life, and make apps run smoother.
 - **New User Interface:** The refreshed One UI 7.0 offers modern design elements, smoother transitions, and an overall cleaner experience, making interactions more intuitive.
 - **Advanced Security:** Samsung continues its focus on user privacy with enhanced security features designed to protect your personal data.
@@ -55,6 +70,11 @@ Android 15 paired with One UI 7.0 introduces a slew of new features, making your
 
 #### **Rollout Schedule**
 Samsung typically rolls out updates in phases, with flagship devices receiving updates first, followed by mid-range and older models. Users can expect notifications directly on their devices when Android 15 becomes available for them.
+
+<!-- Adsense if enabled -->
+      {% if site.adsense == "enabled" %}
+      {% include adsense-under-header.html %}
+      {% endif %}
 
 To ensure a smooth update experience, Samsung recommends the following steps before downloading and installing Android 15:
 1. **Backup Your Data:** Always back up important files to avoid losing any data during the update.
