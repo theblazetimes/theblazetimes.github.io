@@ -65,6 +65,10 @@ post_class: post-template
         {% endif %}
         {{ content }}
       </div>
+      <!-- Adsense if enabled -->
+      {% if site.adsense == "enabled" %}
+      {% include adsense-under-header.html %}
+      {% endif %}
       <!-- Rating -->
       {% if page.rating %}
       <div class="rating mb-4 d-flex align-items-center">
