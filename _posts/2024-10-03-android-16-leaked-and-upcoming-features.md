@@ -5,8 +5,8 @@ description: "Discover the potential features of Android 16, including smart pre
 author: It Is Unique Official
 author_url: "https://gravatar.com/itisuniqueofficial"
 gravatar: "beb6bb7addac22582e879ea50bbacfa2"
-categories: [ "Technology", "Android" ]
-tags: [ "Android 16", "Tech Features", "Google", "QPR Updates", "Pixel Devices" ]
+categories: [ Technology, Android ]
+tags: [ Android 16, Tech Features, Google, QPR Updates, Pixel Devices ]
 image: assets/images/android-16.jpg
 keywords: "Android 16, Android 16 features, Android 16 leaks, Google Android updates, QPR updates"
 date: 2024-10-03T00:47:46+05:30
