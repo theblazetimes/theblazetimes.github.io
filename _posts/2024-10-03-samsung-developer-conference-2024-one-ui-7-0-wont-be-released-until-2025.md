@@ -21,23 +21,23 @@ Samsung has kicked off its much-anticipated **Samsung Developer Conference 2024 
 
 For months, enthusiasts and tipsters alike speculated that Samsung might use SDC24 to introduce One UI 7.0, especially given the long development timeline. However, **Ice Universe**, a well-known Samsung tipster, hinted at the uncertainty surrounding the release, noting, *"I don’t know if One UI 7 will be mentioned at SDC24, but it’s a safe bet that One UI 7 won’t be released for quite some time."* His insights were proven right as Samsung confirmed the major update won’t hit devices this year.
 
-### One UI 7 Delays: What’s Behind It?
+## One UI 7 Delays: What’s Behind It?
 
 While the disappointment is palpable, the delay comes with good reason. Reports suggest that **Samsung** is focusing on making One UI 7.0 an exclusive, efficient, smooth, and bug-free experience. Another major factor appears to be the integration of advanced **Galaxy AI features**, which are becoming an increasingly important part of Samsung’s ecosystem.
 
 Despite the delay, the beta testing of One UI 7.0 has been spotted on Samsung’s servers, where updates have been frequent. However, none of these builds have reached the milestone where a beta release for users could be rolled out. The lack of a "Z" marking on these builds, typically signifying a beta version, further supports the tipsters' claims that One UI 7 is still far from its public debut.
 
-### Preview of One UI 7: A New UX and AI-Driven Features
+## Preview of One UI 7: A New UX and AI-Driven Features
 
 Although **One UI 7** won’t be available this year, Samsung did offer a sneak peek at SDC24. The new version will focus on a **simple, impactful, and emotive design** while integrating more AI capabilities to streamline daily activities. The goal, as Samsung has stated, is to deliver a personalized, creative, and productive mobile experience.
 
-### The Wait Until 2025: Galaxy S25 to Get One UI 7 First
+## The Wait Until 2025: Galaxy S25 to Get One UI 7 First
 
 Samsung revealed that **One UI 7** will be launched alongside the **Galaxy S25** series, expected to be unveiled in January 2025. While current devices like the **Galaxy S24 series** will receive the beta before 2024 ends, users will have to wait until next year for the full release.
 
 This announcement marks a significant shift in Samsung’s usual software release strategy. Many were expecting at least a **beta program** at SDC24, but the company clarified that the beta will be available to developers later this year before a public rollout.
 
-### Related News on Android 15 Updates
+## Related News on Android 15 Updates
 
 Samsung may not have been the first to roll out Android 15-based updates, but **Vivo** recently launched its **Funtouch OS 15**, making it the first brand to integrate Android 15 for select devices. For more information, read our article on **[Vivo’s Funtouch OS 15 launch](https://www.theblazetimes.in/vivo-becomes-first-to-launch-android-15-based-funtouchos-15-for-select-devices/)**. Additionally, Vivo is gearing up for the **[launch of its X200 series](https://www.theblazetimes.in/vivo-x200-series-launch-confirmed-for-october-14-flat-design-zeiss-cameras-and-funtouch-os-15/)**, which is expected to ship with Funtouch OS 15.
 
