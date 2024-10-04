@@ -172,7 +172,7 @@
             "author": {
               "@type": "Person",
               "name": "{{ page.author | default: 'It Is Unique Official' }}",
-              "url": "{{ page.author_url | default: site.url | append: '/author/it-is-unique-official' }}"
+              "url": "{{ page.author_url }}"
             },
             "publisher": {
               "@type": "Organization",
@@ -204,7 +204,7 @@
             "@type": "Person",
             "@id": "{{ site.url }}/#Person",
             "name": "{{ page.author | default: 'It Is Unique Official' }}",
-            "url": "{{ page.author_url | default: site.url | append: '/author/it-is-unique-official' }}",
+            "url": "{{ page.author_url }}",
             "image": {
               "@type": "ImageObject",
               "url": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
