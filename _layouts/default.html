@@ -67,7 +67,7 @@
             "url": "{{ site.url }}",
             "logo": {
               "@type": "ImageObject",
-              "url": "{{ site.logo | default: site.url | append: '/logo.png' }}",
+              "url": "{{ site.url | append: '/logo.png' }}",
               "caption": "{{ site.title }}",
               "width": "261",
               "height": "68"
@@ -97,7 +97,7 @@
               "@id": "{{ site.url }}/#Organization",
               "logo": {
                 "@type": "ImageObject",
-                "url": "{{ site.logo | default: site.url | append: '/logo.png' }}"
+                "url": "{{ site.url | append: '/logo.png' }}"
               }
             },
             "inLanguage": "en-IN"
@@ -125,7 +125,7 @@
               "@id": "{{ site.url }}/#Organization",
               "logo": {
                 "@type": "ImageObject",
-                "url": "{{ site.url }}/logo.png"
+                "url": "{{ site.url | append: '/logo.png' }}"
               }
             },
             "inLanguage": "en-IN",
