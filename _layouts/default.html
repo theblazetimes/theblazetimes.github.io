@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <title>{{ page.title }}</title>
     <!-- Meta -->
@@ -63,19 +63,18 @@
           {
             "@type": "Organization",
             "@id": "{{ site.url }}/#Organization",
-            "name": "{{ site.name | default: 'Default Site Name' }}",
-            "url": "{{ site.url | default: 'https://www.example.com' }}",
+            "name": "{{ site.name | default: 'The Blaze Times' }}",
+            "url": "{{ site.url | default: 'https://theblazetimes.in' }}",
             "logo": {
               "@type": "ImageObject",
-              "url": "{{ site.logo | default: 'https://www.example.com/default-logo.jpg' }}",
-              "contentUrl": "{{ site.logo }}",
+              "url": "{{ site.logo | default: 'https://theblazetimes.in/logo.jpg' }}",
               "caption": "{{ site.title }}",
               "width": "261",
               "height": "68"
             },
-            "legalName": "{{ site.legal_name | default: 'Default Legal Name' }}",
-            "alternateName": "{{ site.alternate_name | default: 'Default Alternate Name' }}",
-            "foundingDate": "{{ site.founding_date | default: '2020-01-01' }}",
+            "legalName": "{{ site.legal_name | default: 'The Blaze Times' }}",
+            "alternateName": "{{ site.alternate_name | default: 'TBT' }}",
+            "foundingDate": "{{ site.founding_date | default: '2024-01-14' }}",
             "sameAs": [
               "https://www.facebook.com/{{ site.facebook }}",
               "https://twitter.com/{{ site.x }}"
@@ -84,8 +83,8 @@
           {
             "@type": "WebSite",
             "@id": "{{ site.url }}/#WebSite",
-            "name": "{{ site.name | default: 'Default WebSite Name' }}",
-            "url": "{{ site.url | default: 'https://www.example.com' }}",
+            "name": "{{ site.name | default: 'The Blaze Times' }}",
+            "url": "{{ site.url | default: 'https://theblazetimes.in' }}",
             "copyrightHolder": {
               "@type": "Organization",
               "@id": "{{ site.url }}/#Organization",
@@ -94,14 +93,14 @@
             },
             "publisher": {
               "@type": "Organization",
-              "name": "{{ site.name | default: 'Default Publisher Name' }}",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
               "@id": "{{ site.url }}/#Organization",
               "logo": {
                 "@type": "ImageObject",
                 "url": "{{ site.url }}/logo.png"
               }
             },
-            "inLanguage": "en"
+            "inLanguage": "en-IN"
           },
           {
             "@type": "WebPage",
@@ -109,27 +108,27 @@
             "name": "{{ page.title | default: 'Default Page Title' }}",
             "url": "{{ site.url }}{{ page.url | default: '/default-url' }}",
             "description": "{{ page.description | default: 'Default Description' }}",
-            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2024-01-01T00:00:00' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2024-01-01T00:00:00' }}",
             "primaryImageOfPage": {
               "@id": "{{ site.url }}/{{ page.image | default: '/default-page-image.jpg' }}#PrimaryImage"
             },
             "isPartOf": {
               "@type": "WebSite",
               "@id": "{{ site.url }}/#WebSite",
-              "name": "{{ site.name | default: 'Default WebSite Name' }}",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
               "url": "{{ site.url }}"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "{{ site.name | default: 'Default Publisher Name' }}",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
               "@id": "{{ site.url }}/#Organization",
               "logo": {
                 "@type": "ImageObject",
                 "url": "{{ site.url }}/logo.png"
               }
             },
-            "inLanguage": "en",
+            "inLanguage": "en-IN",
             "breadcrumb": {
               "@id": "{{ site.url }}{{ page.url | default: '/default-url' }}#Breadcrumb"
             }
@@ -158,7 +157,7 @@
           },
           {
             "@type": "NewsArticle",
-            "@id": "{{ site.url }}{{ page.url }}#Article",
+            "@id": "{{ site.url }}{{ page.url }}#RichSnippet",
             "mainEntityOfPage": "{{ site.url }}{{ page.url }}#WebPage",
             "url": "{{ site.url }}{{ page.url }}",
             "thumbnailUrl": "{{ site.url }}/{{ page.image }}",
@@ -174,36 +173,35 @@
             "image": {
               "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#ImageObject"
             },
-            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2020-01-01T00:00:00' }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2024-01-01T00:00:00' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+05:30' | default: '2024-01-01T00:00:00' }}",
             "author": {
               "@type": "Person",
-              "name": "{{ page.author | default: 'Anonymous' }}",
-              "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}"
+              "name": "{{ page.author | default: 'It Is Unique Official' }}",
+              "url": "{{ page.author_url | default: 'https://theblazetimes.in/author/it-is-unique-official' }}"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "{{ site.name | default: 'Default Publisher Name' }}",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
               "@id": "{{ site.url }}/#Organization",
               "logo": {
                 "@type": "ImageObject",
                 "url": "{{ site.url }}/logo.png"
               }
-            }, 
+            },
             "isPartOf": {
               "@type": "WebPage",
               "@id": "{{ site.url }}/#WebPage",
-              "name": "{{ site.name | default: 'Default WebSite Name' }}",
+              "name": "{{ site.name | default: 'The Blaze Times' }}",
               "url": "{{ site.url }}"
             },
-            "inLanguage": "en",
+            "inLanguage": "en-IN",
             "description": "{{ page.description | default: 'Default Article Description' }}"
           },
           {
             "@type": "ImageObject",
             "@id": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}#ImageObject",
             "url": "{{ site.url }}/{{ page.image | default: '/default-article-image.jpg' }}",
-            "contentUrl": "{{ site.url }}/{{ page.image }}",
             "caption": "{{ page.title | default: 'Default Image Caption' }} - Featured Image",
             "width": "1980",
             "height": "1080"
@@ -211,8 +209,8 @@
           {
             "@type": "Person",
             "@id": "{{ site.url }}/#Person",
-            "name": "{{ page.author | default: 'Anonymous' }}",
-            "url": "{{ page.author_url | default: 'https://www.example.com/default-author' }}",
+            "name": "{{ page.author | default: 'It Is Unique Official' }}",
+            "url": "{{ page.author_url | default: 'https://theblazetimes.in/author/it-is-unique-official' }}",
             "image": {
               "@type": "ImageObject",
               "url": "https://www.gravatar.com/avatar/{{ page.gravatar }}?s=250&d=mm&r=x",
