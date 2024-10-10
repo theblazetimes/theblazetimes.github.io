@@ -77,7 +77,8 @@ const loadDeferredStyles = () => {
     const addStylesNode = document.getElementById('deferred-styles');
     if (addStylesNode) {
         const replacement = document.createElement('div');
-        replacement.innerHTML = addStylesNode.textContent;
+        const textNode = document.createTextNode(addStylesNode.textContent);
+        replacement.appendChild(textNode);
         document.body.appendChild(replacement);
         addStylesNode.parentElement.removeChild(addStylesNode);
     }
