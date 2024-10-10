@@ -224,9 +224,11 @@
         ]
       }
     </script>
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <!-- Preload Google Fonts and Font Awesome for critical parts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"></noscript>
     <!-- CSS -->
     <style>*{user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}input,textarea,.selectable{user-select:text;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text}</style>
   </head>
