@@ -47,6 +47,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-git-last-modified
+  - jekyll-redirect-from
     
 # Archives
 jekyll-archives:
@@ -81,6 +82,6 @@ analytics: "enabled"
 google_analytics: "G-J47BDWDNY1"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+lazyimages: "enabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
