@@ -8,14 +8,12 @@
                 {% if post.image %}
                     {% if site.lazyimages == "enabled" %}
                         <img class="img-fluid lazyimg"
-                             href="{{ site.url }}{{ post.url }}"
                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" 
                              data-src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" 
                              alt="{{ post.title }}" 
                              title="{{ post.title }}">  <!-- Title for lazy-loaded image -->
                     {% else %}
                         <img class="img-fluid" 
-                             href="{{ site.url }}{{ post.url }}"
                              src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.url }}/{{ post.image }}{% endif %}" 
                              alt="{{ post.title }}" 
                              title="{{ post.title }}">  <!-- Title for standard image -->
