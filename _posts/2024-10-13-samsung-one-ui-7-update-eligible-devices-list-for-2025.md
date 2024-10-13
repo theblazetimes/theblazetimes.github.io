@@ -9,7 +9,7 @@ categories: [Tech, Samsung, Updates, Mobile]
 tags: [Samsung One UI 7, Android 15, Galaxy S24, Galaxy Z Fold, Galaxy A Series]
 image: assets/images/samsung-one-ui-7-eligible-devices.webp
 keywords: "Samsung One UI 7, Galaxy devices update, Android 15, eligible devices list, Galaxy S series update"
-date: 2024-10-12T15:56:07+05:30
+date: 2024-10-13T15:56:07+05:30
 ---
 
 Samsung’s One UI 7 is set to bring a refined user interface, enhanced privacy and security, better multitasking, battery optimizations, and more customization features to Galaxy devices. Based on leaks and Samsung’s update track record, here's a look at the eligible devices expected to receive the One UI 7 update.
