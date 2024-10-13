@@ -7,6 +7,10 @@ Sitemap: https://edu.theblazetimes.in/sitemap.xml
 Sitemap: https://edu.theblazetimes.in/atom.xml
 Sitemap: https://edu.theblazetimes.in/rss.xml
 
+Sitemap: https://coder.theblazetimes.in/sitemap.xml
+Sitemap: https://coder.theblazetimes.in/atom.xml
+Sitemap: https://coder.theblazetimes.in/rss.xml
+
 Sitemap: https://news.theblazetimes.in/sitemap.xml
 Sitemap: https://news.theblazetimes.in/atom.xml
 Sitemap: https://news.theblazetimes.in/rss.xml
