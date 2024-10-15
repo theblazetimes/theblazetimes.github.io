@@ -1,11 +1,30 @@
+# For all user agents
 User-agent: *
 
+# Disallowed directories
+Disallow: /search
+Disallow: /feeds
+Disallow: /*?hl=
+Disallow: /*?*&hl=
+
+# Allowed directories
+Allow: /search?q=
+
+# Sitemap URLs
 Sitemap: https://www.theblazetimes.in/sitemap.xml
 Sitemap: https://www.theblazetimes.in/feed.xml
 
 Sitemap: https://edu.theblazetimes.in/sitemap.xml
 Sitemap: https://edu.theblazetimes.in/atom.xml
 Sitemap: https://edu.theblazetimes.in/rss.xml
+
+Sitemap: https://blogger.theblazetimes.in/sitemap.xml
+Sitemap: https://blogger.theblazetimes.in/atom.xml
+Sitemap: https://blogger.theblazetimes.in/rss.xml
+
+Sitemap: https://uptodate.theblazetimes.in/sitemap.xml
+Sitemap: https://uptodate.theblazetimes.in/atom.xml
+Sitemap: https://uptodate.theblazetimes.in/rss.xml
 
 Sitemap: https://coder.theblazetimes.in/sitemap.xml
 Sitemap: https://coder.theblazetimes.in/atom.xml
