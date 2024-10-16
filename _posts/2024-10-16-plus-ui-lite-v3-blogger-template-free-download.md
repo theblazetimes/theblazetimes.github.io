@@ -59,11 +59,11 @@ The **Plus UI Lite v3 Blogger Template** is protected by a license key and can b
 
 **Demo** - You can view the Plus UI Lite v3 Theme Demo and experience the design for yourself before making your decision.
 
-[View Demo](https://plus-ui-lite.blogspot.com){: style="display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold;"}
+[View Demo](https://plus-ui-lite.blogspot.com){: style="width: 100%; text-align: center; display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold;"}
 
 **Download** - If you're interested in downloading the Plus UI Lite v3 Theme, copy the following link and complete the process to obtain the download link!
 
-[Download Now](https://itisuniqueofficial.page.link/5WMr){: style="display: inline-block; background-color: #FF5733; color: white; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold;"}
+[Download Now](https://itisuniqueofficial.page.link/5WMr){: style="width: 100%; text-align: center; display: inline-block; background-color: #FF5733; color: white; padding: 10px 20px; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold;"}
 
 ## Final Thoughts
 
