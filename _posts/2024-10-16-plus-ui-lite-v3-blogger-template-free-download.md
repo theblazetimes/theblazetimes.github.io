@@ -65,7 +65,7 @@ https://plus-ui-lite.blogspot.com
 
 **Download** - If you're interested in downloading the Plus UI Lite v3 Theme, copy the following link and complete the process to obtain the download link!
 
-```
+```html
 https://itisuniqueofficial.page.link/5WMr
 ```
 
